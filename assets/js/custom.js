@@ -101,4 +101,22 @@
 		},
 	});
 
+	/**<<=== 15 Background Image JS ==>>**/
+	$("[data-background]").each(function () {
+		$(this).css(
+			"background-image",
+			"url(" + $(this).attr("data-background") + ")"
+		);
+	});
+
+	/**<<=== 12 Popup JS ==>>**/
+	$('.popup-youtube, .popup-vimeo').magnificPopup({
+		disableOn: 300,
+		type: 'iframe',
+		mainClass: 'mfp-fade',
+		fixedContentPos: false,
+		removalDelay: 160,
+		preloader: false,
+	});
+
 })(jQuery);
