@@ -65,8 +65,59 @@
 	/**<<=== 05 scrollCue JS ==>>**/
 	scrollCue.init();
 
-	/**<<=== 09 Partner Slide JS ==>>**/
-	$('.review-slide').owlCarousel({
+	/**<<=== 15 Background Image JS ==>>**/
+	$("[data-background]").each(function () {
+		$(this).css(
+			"background-image",
+			"url(" + $(this).attr("data-background") + ")"
+		);
+	});
+
+	/**<<=== 12 Popup JS ==>>**/
+	$('.popup-youtube, .popup-vimeo').magnificPopup({
+		disableOn: 300,
+		type: 'iframe',
+		mainClass: 'mfp-fade',
+		fixedContentPos: false,
+		removalDelay: 160,
+		preloader: false,
+	});
+
+	//skill JS
+	$('.skill-bar').each(function() {
+		jQuery(this).find('.progress-content').animate({
+		width:jQuery(this).attr('data-percentage')
+		},2000);
+		
+		jQuery(this).find('.progress-number-mark').animate(
+		{left:jQuery(this).attr('data-percentage')},
+		{
+			duration: 2000,
+			step: function(now, fx) {
+			var data = Math.round(now);
+			jQuery(this).find('.percent').html(data + '%');
+			}
+		});  
+	});
+
+	/**<<=== 09 Testimonial Slide JS ==>>**/
+	$('.testimonial-slide').owlCarousel({
+		items: 1,
+		loop: true,
+		margin: 30,
+		nav: true,
+		dots: false,
+		autoplay: true,
+		smartSpeed: 1000,
+		autoplayHoverPause: true,
+		navText: [
+			"<i class='fa-regular fa-arrow-left'></i>",
+			"<i class='fa-regular fa-arrow-right'></i>",
+		],
+	});
+
+	/**<<=== 09 Testimonial Slide JS ==>>**/
+	$('.testimonialss-slide').owlCarousel({
 		items: 1,
 		loop: true,
 		margin: 30,
@@ -101,22 +152,5 @@
 		},
 	});
 
-	/**<<=== 15 Background Image JS ==>>**/
-	$("[data-background]").each(function () {
-		$(this).css(
-			"background-image",
-			"url(" + $(this).attr("data-background") + ")"
-		);
-	});
-
-	/**<<=== 12 Popup JS ==>>**/
-	$('.popup-youtube, .popup-vimeo').magnificPopup({
-		disableOn: 300,
-		type: 'iframe',
-		mainClass: 'mfp-fade',
-		fixedContentPos: false,
-		removalDelay: 160,
-		preloader: false,
-	});
 
 })(jQuery);

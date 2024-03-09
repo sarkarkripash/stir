@@ -22,6 +22,12 @@ $box-shadow: 0 0 20px 3px rgba(0, 0, 0, 0.05);
     .pb-100 {
         padding-bottom: 60px;
     }
+    .pt-75 {
+        padding-top: 35px;
+    }
+    .pb-75 {
+        padding-bottom: 35px;
+    }
     .pt-70 {
         padding-top: 35px;
     }
@@ -128,6 +134,7 @@ $box-shadow: 0 0 20px 3px rgba(0, 0, 0, 0.05);
         font-size: 14px;
     }
     .section-title {
+        margin-bottom: 30px;
         h2 {
             font-size: 30px;
             margin-bottom: 20px;
@@ -146,6 +153,80 @@ $box-shadow: 0 0 20px 3px rgba(0, 0, 0, 0.05);
     .services-btn {
         margin-top: 15px;
     }
+
+    /** Who We Are Area CSS
+    ============================**/
+    .who-we-are-img {
+        margin-left: 0;
+    }
+    .who-we-are-content {
+        margin-bottom: 30px;
+        h2 {
+            font-size: 30px;
+            margin-bottom: 20px;
+        }
+        p {
+            font-size: 16px;
+        }
+    }
+
+    /** Testimonial Area CSS
+    ============================**/
+    .testimonial-single-item {
+        padding-left: 0;
+        text-align: center;
+        .testimonial-img {
+            margin: auto;
+        }
+        p {
+            font-size: 18px;
+            margin-bottom: 20px;
+        }
+    }
+    .testimonial-slide {
+        &.owl-theme {
+            .owl-nav  {
+                position: unset;
+                margin-top: 30px !important;
+            }
+        }
+    }
+    
+    /** Case Study Area CSS
+    ============================**/
+    .case-study-content-wrap {
+        .slider {
+            a {
+                .case-study-content {
+                    left: -62px;
+                    bottom: 150px;
+                    transform: rotate(-90deg);
+                }
+            }
+            li {
+                &:hover {
+                    flex-grow: 8;
+                }
+            }
+        }
+    }
+    .accordion {
+        &.accordion-content {
+            .accordion-item {
+                .accordion-body {
+                    padding: 0;
+                    padding-top: 15px;
+                    p {
+                        font-size: 16px;
+                    }
+                }
+            }
+        }
+    }
+    .faq-img {
+        margin-bottom: 30px;
+    }
+    
     
 }
 
@@ -162,6 +243,12 @@ $box-shadow: 0 0 20px 3px rgba(0, 0, 0, 0.05);
     }
     .pb-100 {
         padding-bottom: 60px;
+    }
+    .pt-75 {
+        padding-top: 35px;
+    }
+    .pb-75 {
+        padding-bottom: 35px;
     }
     .pt-70 {
         padding-top: 35px;
@@ -228,6 +315,19 @@ $box-shadow: 0 0 20px 3px rgba(0, 0, 0, 0.05);
         }
     }
 
+    /** Section Title Area CSS
+    ============================**/
+    .top-title {
+        font-size: 14px;
+    }
+    .section-title {
+        margin-bottom: 30px;
+        h2 {
+            font-size: 35px;
+            margin-bottom: 20px;
+        }
+    }
+
     /** Services Area CSS
     ============================**/
     .services-single-item {
@@ -239,6 +339,50 @@ $box-shadow: 0 0 20px 3px rgba(0, 0, 0, 0.05);
     }
     .services-btn {
         margin-top: 15px;
+    }
+
+    /** Who We Are Area CSS
+    ============================**/
+    .who-we-are-img {
+        margin-left: 0;
+    }
+    .who-we-are-content {
+        margin-bottom: 30px;
+        h2 {
+            font-size: 35px;
+            margin-bottom: 20px;
+        }
+        p {
+            font-size: 16px;
+        }
+    }
+
+    /** Testimonial Area CSS
+    ============================**/
+    .testimonial-single-item {
+        padding-left: 0;
+        p {
+            font-size: 18px;
+            margin-bottom: 20px;
+        }
+    }
+
+    /** Case Study Area CSS
+    ============================**/
+    .case-study-content-wrap {
+        .slider {
+            li {
+                &:hover {
+                    flex-grow: 5;
+                }
+            }
+        }
+    }
+
+    /** FAQ Area CSS
+    ============================**/
+    .faq-img {
+        margin-bottom: 30px;
     }
 
 }
@@ -308,6 +452,46 @@ $box-shadow: 0 0 20px 3px rgba(0, 0, 0, 0.05);
     }
     .services-btn {
         margin-top: 15px;
+    }
+
+    /** Who We Are Area CSS
+    ============================**/
+    .who-we-are-img {
+        margin-left: 0;
+    }
+    .who-we-are-content {
+        h2 {
+            font-size: 39px;
+        }
+    }
+    /** Testimonial Area CSS
+    ============================**/
+    .testimonial-single-item {
+        padding-left: 0;
+        p {
+            font-size: 20px;
+            margin-bottom: 20px;
+        }
+    }
+
+    /** Case Study Area CSS
+    ============================**/
+    .case-study-content-wrap {
+        .slider {
+            li {
+                &:hover {
+                    flex-grow: 5;
+                }
+            }
+        }
+    }
+
+    /** Footer Area CSS
+    ============================**/
+    .footer-single-item {
+        p {
+            font-size: 17px;
+        }
     }
 
 }
