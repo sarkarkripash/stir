@@ -29,22 +29,11 @@
 	/**<<=== 01 Header Sticky JS ==>>**/
 	$(window).on('scroll', function() {
 		if ($(this).scrollTop() >150){  
-			$('.navbar').addClass("is-sticky");
+			$('.navbar-area').addClass("is-sticky");
 		}
 		else{
-			$('.navbar').removeClass("is-sticky");
+			$('.navbar-area').removeClass("is-sticky");
 		};
-	});
-	
-	$('.scroll-btn, .navbar .navbar-nav li a').on('click', function(e){
-		var anchor = $(this);
-		$('html, body').stop().animate({
-			scrollTop: $(anchor.attr('href')).offset().top - 100
-		}, 100);
-		e.preventDefault();
-	});
-	$('.navbar .navbar-nav li a').on('click', function(){
-		$('.navbar-collapse').collapse('hide');
 	});
 
 	/**<<=== 03 Go Top JS ==>>**/
@@ -116,8 +105,37 @@
 		],
 	});
 
-	/**<<=== 09 Testimonial Slide JS ==>>**/
-	$('.testimonialss-slide').owlCarousel({
+	/**<<=== 09 Services Slide JS ==>>**/
+	$('.services-slide').owlCarousel({
+		items: 1,
+		loop: true,
+		margin: 30,
+		nav: false,
+		dots: false,
+		autoplay: true,
+		smartSpeed: 1000,
+		autoplayHoverPause: true,
+		responsive: {
+			0: {
+				items: 1,
+			},
+			768: {
+				items: 2,
+			},
+			992: {
+				items: 3,
+			},
+			1200: {
+				items: 4,
+			},
+			1500: {
+				items: 4,
+			},
+		},
+	});
+
+	/**<<=== 09 Cases Slide JS ==>>**/
+	$('.cases-slide').owlCarousel({
 		items: 1,
 		loop: true,
 		margin: 30,
@@ -127,18 +145,15 @@
 		smartSpeed: 1000,
 		autoplayHoverPause: true,
 		navText: [
-			"<i class='fa-solid fa-chevron-left'></i>",
-			"<i class='fa-solid fa-chevron-right'></i>",
+			"<i class='fa-regular fa-arrow-left'></i>",
+			"<i class='fa-regular fa-arrow-right'></i>",
 		],
 		responsive: {
 			0: {
 				items: 1,
 			},
-			576: {
-				items: 2,
-			},
 			768: {
-				items: 2,
+				items: 1,
 			},
 			992: {
 				items: 2,
@@ -151,6 +166,11 @@
 			},
 		},
 	});
+
+	/**<<=== 11 Counter JS ==>>**/
+    $('.counter').counterUp({
+        time: 1000
+    });
 
 
 })(jQuery);
