@@ -167,6 +167,55 @@
 		},
 	});
 
+	/**<<=== 09 Ase Studie Slide JS ==>>**/
+	$('.ase-studie-slide').owlCarousel({
+		items: 1,
+		loop: true,
+		margin: 0,
+		nav: false,
+		dots: false,
+		autoplay: false,
+		smartSpeed: 1000,
+		autoplayHoverPause: true,
+		navText: [
+			"<i class='fa-regular fa-arrow-left'></i>",
+			"<i class='fa-regular fa-arrow-right'></i>",
+		],
+		responsive: {
+			0: {
+				items: 1,
+			},
+			768: {
+				items: 2,
+			},
+			992: {
+				items: 2,
+			},
+			1200: {
+				items: 3,
+			},
+			1500: {
+				items: 3,
+			},
+		},
+	});
+
+	/**<<=== 09 Testimonial Slide Two JS ==>>**/
+	$('.testimonial-slide-two').owlCarousel({
+		items: 1,
+		loop: true,
+		margin: 30,
+		nav: true,
+		dots: false,
+		autoplay: true,
+		smartSpeed: 1000,
+		autoplayHoverPause: true,
+		navText: [
+			"<i class='fa-regular fa-arrow-left'></i>",
+			"<i class='fa-regular fa-arrow-right'></i>",
+		],
+	});
+
 	/**<<=== 11 Counter JS ==>>**/
     $('.counter').counterUp({
         time: 1000

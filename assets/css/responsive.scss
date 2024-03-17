@@ -251,6 +251,33 @@ $box-shadow: 0 0 20px 3px rgba(0, 0, 0, 0.05);
             }
         }
     }
+    .testimonials-single-item-two {
+        margin-right: 0;
+        .review {
+            margin-bottom: 15px;
+        }
+        p {
+            font-size: 16px;
+            padding-bottom: 15px;
+            margin-bottom: 15px;
+        }
+        .info {
+            h3 {
+                font-size: 18px;
+            }
+            span {
+                font-size: 14px;
+            }
+        }
+    }
+    .testimonial-slide-two {
+        &.owl-theme {
+            .owl-nav {
+                position: unset;
+                margin-top: 20px !important;
+            }
+        }
+    }
     
     /** Case Study Area CSS
     ============================**/
@@ -285,6 +312,9 @@ $box-shadow: 0 0 20px 3px rgba(0, 0, 0, 0.05);
     }
     .faq-img {
         margin-bottom: 30px;
+    }
+    .accordion.accordion-content .accordion-item .accordion-header .accordion-button .count {
+        margin-right: 5px;
     }
 
     /** Counter Area CSS
@@ -331,6 +361,106 @@ $box-shadow: 0 0 20px 3px rgba(0, 0, 0, 0.05);
             font-size: 25px;
         }
     }
+
+    /** Team Area CSS
+    ============================**/
+    .team-single-item {
+        padding: 25px;
+        .info {
+            h3 {
+                font-size: 20px;
+            }
+        }
+    }
+
+    /** Marquee Area CSS
+    ============================**/
+    .marquee-wrapper {
+        .marquee {
+            a {
+                font-size: 30px;
+                padding: 30px 75px;
+            }
+        }
+    }
+    
+    /** Blog Area CSS
+    ============================**/
+    .blog-single-item {
+        padding: 25px;
+        h3 {
+            font-size: 18px;
+        }
+    }
+    .blog-info-content {
+        h2 {
+            font-size: 25px;
+            margin-bottom: 20px;
+        }
+        p {
+            margin-bottom: 20px;
+        }
+    }
+
+    /** Subscribe Area CSS
+    ============================**/
+    .subscribe-newsletter-content {
+        margin-bottom: 30px;
+        h2 {
+            font-size: 25px;
+        }
+    }
+    .subscribe-newsletter-area {
+        padding-top: 60px;
+        padding-bottom: 60px;
+    }
+    .subscribe-newsletter-form {
+        .form-control {
+            height: 60px;
+        }
+        .main-btn {
+            padding: 15px 8px;
+            span {
+                display: none;
+            }
+            i {
+                margin-left: 0;
+            }
+        }
+    }
+
+    /** Footer Area CSS
+    ============================**/
+    .footer-single-item {
+        h3 {
+            margin-bottom: 15px;
+        }
+        p {
+            font-size: 17px;
+        }
+        .useful-link {
+            li {
+                a {
+                    font-size: 17px;
+                }
+            }
+        }
+        .contact-info {
+            li {
+                a {
+                    font-size: 17px;
+                }
+            }
+        }
+        &.style-two {
+            h3 {
+                margin-bottom: 15px;
+                font-size: 20px;
+            }
+        }
+    }
+    
+    
     
     
     
@@ -583,6 +713,136 @@ $box-shadow: 0 0 20px 3px rgba(0, 0, 0, 0.05);
         }
     }
 
+    /** Team Area CSS
+    ============================**/
+    .team-single-item {
+        padding: 25px;
+        .info {
+            h3 {
+                font-size: 20px;
+            }
+        }
+    }
+
+    /** Marquee Area CSS
+    ============================**/
+    .marquee-wrapper {
+        .marquee {
+            a {
+                font-size: 30px;
+                padding: 30px 75px;
+            }
+        }
+    }
+
+    /** Testimonials Area CSS
+    ============================**/
+    .testimonials-single-item-two {
+        margin-right: 0;
+        .review {
+            margin-bottom: 15px;
+        }
+        p {
+            font-size: 18px;
+            padding-bottom: 15px;
+            margin-bottom: 15px;
+        }
+        .info {
+            h3 {
+                font-size: 20px;
+            }
+            span {
+                font-size: 14px;
+            }
+        }
+    }
+    .testimonial-slide-two {
+        &.owl-theme {
+            .owl-nav {
+                position: unset;
+                margin-top: 20px !important;
+            }
+        }
+    }
+
+    /** Blog Area CSS
+    ============================**/
+    .blog-single-item {
+        padding: 25px;
+        h3 {
+            font-size: 18px;
+        }
+    }
+    .blog-info-content {
+        h2 {
+            font-size: 25px;
+            margin-bottom: 20px;
+        }
+        p {
+            margin-bottom: 20px;
+        }
+    }
+
+    /** Subscribe Area CSS
+    ============================**/
+    .subscribe-newsletter-content {
+        margin-bottom: 30px;
+        h2 {
+            font-size: 30px;
+        }
+    }
+    .subscribe-newsletter-area {
+        padding-top: 60px;
+        padding-bottom: 60px;
+    }
+    .subscribe-newsletter-form {
+        .form-control {
+            height: 60px;
+        }
+        .main-btn {
+            padding: 15px 8px;
+            span {
+                display: none;
+            }
+            i {
+                margin-left: 0;
+            }
+        }
+    }
+
+    /** Footer Area CSS
+    ============================**/
+    .footer-single-item {
+
+        h3 {
+            margin-bottom: 15px;
+        }
+        p {
+            font-size: 17px;
+        }
+        .useful-link {
+            li {
+                a {
+                    font-size: 17px;
+                }
+            }
+        }
+        .contact-info {
+            li {
+                a {
+                    font-size: 17px;
+                }
+            }
+        }
+        &.style-two {
+            h3 {
+                margin-bottom: 15px;
+                font-size: 20px;
+            }
+        }
+    }
+
+    
   
     
 
@@ -728,6 +988,11 @@ $box-shadow: 0 0 20px 3px rgba(0, 0, 0, 0.05);
         p {
             font-size: 17px;
         }
+        &.style-two {
+            h3 {
+                margin-bottom: 15px;
+            }
+        }
     }
 
     /** Counter Area CSS
@@ -751,6 +1016,36 @@ $box-shadow: 0 0 20px 3px rgba(0, 0, 0, 0.05);
     .get-in-touch-area {
         h2 {
             font-size: 35px;
+        }
+    }
+
+    /** Testimonials Area CSS
+    ============================**/
+    .testimonials-single-item-two {
+        margin-right: 0;
+        .review {
+            margin-bottom: 15px;
+        }
+        p {
+            font-size: 18px;
+            padding-bottom: 15px;
+            margin-bottom: 15px;
+        }
+        .info {
+            h3 {
+                font-size: 20px;
+            }
+            span {
+                font-size: 14px;
+            }
+        }
+    }
+    .testimonial-slide-two {
+        &.owl-theme {
+            .owl-nav {
+                position: unset;
+                margin-top: 20px !important;
+            }
         }
     }
     
@@ -808,6 +1103,20 @@ $box-shadow: 0 0 20px 3px rgba(0, 0, 0, 0.05);
     .get-in-touch-area {
         margin-left: 0;
         margin-right: 0;
+    }
+
+    /** Blog Area CSS
+    ============================**/
+    .blog-single-item {
+        padding: 25px;
+        h3 {
+            font-size: 20px;
+        }
+    }
+    .blog-info-content {
+        h2 {
+            font-size: 35px;
+        }
     }
 
 }

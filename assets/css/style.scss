@@ -199,6 +199,9 @@ textarea {
 .bg-color-0c0c1c {
 	background-color: #0c0c1c;
 }
+.bg-color-dcfd68 {
+	background-color: #dcfd68;
+}
 .bg-img {
 	background-position: center center;
 	background-repeat: no-repeat;
@@ -417,6 +420,7 @@ textarea {
 	font-family: $helvetica-neue-font-family;
 	text-decoration: none;
 	border-radius: 50px;
+	display: inline-block;
 	i {
 		margin-left: 20px;
 	}
@@ -727,7 +731,7 @@ textarea {
                             color: $heading-color;
                             padding: 15px;
 							margin: 0;
-							font-size: 16px;
+							font-size: 14px;
 							font-weight: 600;
 							line-height: 1;
 							display: block;
@@ -1518,6 +1522,64 @@ textarea {
 		}
 	}
 }
+.testimonials-single-item-two {
+	margin-right: 100px;
+	.review {
+		margin-bottom: 30px;
+		li {
+			i {
+				color: #F3BC00;
+			}
+		}
+	}
+	p {
+		font-size: 20px;
+		color: #A9A9AF;
+		font-style: italic;
+		padding-bottom: 40px;
+		margin-bottom: 40px;
+		border-bottom: 1px solid #191928;
+	}
+	.info {
+		h3 {
+			font-size: 22px;
+		}
+		span {
+			color:#A9A9AF;
+		}
+	}
+}
+.testimonial-slide-two {
+	&.owl-carousel {
+		.owl-item {
+			img {
+				width: auto;
+			}
+		}
+	}
+	&.owl-theme {
+		.owl-nav {
+			margin-top: 0 !important;
+			position: absolute;
+			bottom: 0;
+			right: 100px;
+			.owl-prev, .owl-next {
+				background-color: #191928;
+				width: 50px;
+				height: 50px;
+				line-height: 50px;
+				border-radius: 50px;
+				color: $white-color;
+				transition: $transition;
+				&:hover {
+					background-color: $optional-color;
+					color: $heading-color;
+					border-color: $optional-color;
+				}
+			}
+		}
+	}
+}
 
 /*
 21 - case study Style
@@ -1767,6 +1829,92 @@ textarea {
 		color: $main-color;
 		margin-right: 20px;
 	}
+	&.style-two {
+		h3 {
+			font-size: 22px;
+		}
+		p {
+			font-weight: 400;
+			color: #A9A9AF;
+			font-size: 16px;
+		}
+		.social-link {
+			li {
+				a {
+					background-color: #191928;
+					color: $white-color;
+					border-color: #191928;
+					&:hover {
+						background-color: $optional-color;
+						color: $heading-color;
+					}
+				}
+			}
+		}
+		.useful-link {
+			li {
+				a {
+					color: #A9A9AF;
+					position: relative;
+					padding-left: 15px;
+					font-size: 16px;
+					font-weight: 400;
+					&::before {
+						content: "";
+						position: absolute;
+						top: 50%;
+						transform: translateY(-50%);
+						left: 0;
+						width: 4px;
+						height: 4px;
+						background-color: #A9A9AF;
+						border-radius: 50px;
+					}
+					&:hover {
+						color: $optional-color;
+					}
+				}
+			}
+		}
+		.contact-info {
+			li {
+				position: relative;
+				z-index: 1;
+				padding-left: 40px;
+				margin-bottom: 20px;
+				&:last-child {
+					margin-bottom: 1px;
+				}
+				i {
+					width: 30px;
+					height: 30px;
+					line-height: 30px;
+					text-align: center;
+					background-color: #191928;
+					display: inline-block;
+					color: $optional-color;
+					font-size: 16px;
+					position: absolute;
+					top: 50%;
+					left: 0;
+					transform: translateY(-50%);
+				}
+				span {
+					color: #A9A9AF;
+					font-weight: 400;
+					font-size: 16px;
+				}
+				a {
+					color: #A9A9AF;
+					font-weight: 400;
+					font-size: 16px;
+					&:hover {
+						color: $optional-color;
+					}
+				}
+			}
+		}
+	}
 }
 .copy-right {
 	border-top: 1px solid #F4F4F4;
@@ -1778,6 +1926,18 @@ textarea {
 	span {
 		color: $main-color;
 	}
+	&.style-two {
+		border: none;
+		font-weight: 400;
+		color: #A9A9AF;
+		font-size: 16px;
+		span {
+			color: $optional-color;
+		}
+	}
+}
+.copyright-area {
+	background-color: #191928;
 }
 
 /*
@@ -1992,7 +2152,255 @@ textarea {
 	}
 }
 
+/*
+29 - Team Style
+<<<<======================================================>>>>*/
 .team-single-item {
 	background-color: #191928;
 	padding: 50px 30px;
+	position: relative;
+	margin-bottom: 25px;
+	transition: $transition;
+	.info {
+		margin-top: 30px;
+		h3 {
+			font-size: 22px;
+		}
+		span {
+			font-size: 16px;
+			color: #A9A9AF;
+		}
+	}
+	.social-link {
+		position: absolute;
+		bottom: 50px;
+		right: 30px;
+		li {
+			position: relative;
+			transition: $transition;
+			i {
+				width: 40px;
+				height: 40px;
+				line-height: 40px;
+				text-align: center;
+				display: inline-block;
+				background-color: $optional-color;
+				color: #0C0C1C;
+				transition: $transition;
+				&:hover {
+					background-color: $main-color;
+					color: $white-color;
+				}
+			}
+			&:nth-child(1) {
+				top: 160px;
+			}
+			&:nth-child(2) {
+				top: 120px;
+			}
+			&:nth-child(3) {
+				top: 80px;
+			}
+			&:nth-child(4) {
+				top: 40px;
+			}
+		}
+		&:hover {
+			li {
+				&:nth-child(1) {
+					top: 0;
+				}
+				&:nth-child(2) {
+					top: 0;
+				}
+				&:nth-child(3) {
+					top: 0;
+				}
+				&:nth-child(4) {
+					top: 0;
+				}
+			}
+		}
+	}
+	&:hover {
+		transform: translateY(-5px);
+	}
+}
+
+/*
+30 - Team Style
+<<<<======================================================>>>>*/
+
+/* Marquee Area Style
+<<<<======================================================>>>>*/
+.marquee-wrapper {
+    overflow: hidden;
+	.marquee {
+		display:  inline-block;
+		white-space: nowrap;
+		position: relative;
+		transform: translate3d(0%, 0, 0);
+		animation-name: marquee;
+		animation-timing-function: linear;
+		animation-iteration-count: infinite;
+		animation-duration: 57s;
+		a {
+			display:  inline-block;
+			white-space: nowrap;
+			padding-left: 130px;
+			padding-right: 130px;
+			text-decoration: none;
+            color: $heading-color;
+            font-weight: 700;
+			font-size: 43px;
+			position: relative;
+			line-height: 36px;
+			padding-top: 30px;
+			padding-bottom: 30px;
+			font-family: $heading-font-family-business-agency;
+			&::before {
+				content: "";
+				position: absolute;
+				top: 50%;
+				transform: translateY(-50%);
+				right: -50px;
+				width: 100px;
+				height: 1px;
+				background-color: $heading-color;
+				border-radius: 50px;
+			}
+			&.py-0 {
+				&::before {
+					top: 0;
+				}
+			}
+		}
+	}
+	&:hover {
+		.marquee {
+			animation-play-state: paused !important;
+		}
+	}
+}
+@keyframes marquee {
+	0% {
+		transform: translate3d(0%, 0, 0);
+	}
+	100% {
+		transform: translate3d(-100%, 0, 0);
+	}
+}
+
+/* Blog Area Style
+<<<<======================================================>>>>*/
+.blog-info-content {
+	margin-bottom: 25px;
+	h2 {
+		font-size: 43px;
+		line-height: 1.3;
+		margin-bottom: 30px;
+	}
+	p {
+		margin-bottom: 40px;
+		color: #A9A9AF;
+	}
+}
+.blog-single-item {
+	background-color: #191928;
+	padding: 50px 30px;
+	margin-bottom: 25px;
+	.blog-img {
+		margin-bottom: 20px;
+	}
+	.date {
+		margin-bottom: 10px;
+		li {
+			color: #A9A9AF;
+			font-size: 14px;
+			display: inline-block;
+			position: relative;
+			margin-right: 25px;
+			&::before {
+				content: "";
+				position: absolute;
+				top: 50%;
+				right: -16px;
+				width: 4px;
+				height: 4px;
+				background-color: #A9A9AF;
+				border-radius: 50px;
+				transform: translateY(-50%);
+			}
+			span {
+				color: $optional-color;
+			}
+			&:last-child {
+				margin-right: 0;
+				&::before {
+					display: none;
+				}
+			}
+		}
+	}
+	h3 {
+		font-size: 22px;
+		line-height: 1.5; 
+		margin-bottom: 0;
+		a {
+			text-decoration: none;
+			color: $white-color;
+		}
+	}
+}
+
+/* Subscribe Newsletter Area Style
+<<<<======================================================>>>>*/
+.subscribe-newsletter-area {
+	padding-top: 150px;
+	padding-bottom: 150px;
+	position: relative;
+	z-index: 1;
+	&::before {
+		content: "";
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 100%;
+		height: 100%;
+		background: rgba(25, 25, 40, 0.80);
+		z-index: -1;
+	}
+}
+.subscribe-newsletter-content {
+	h2 {
+		font-size: 40px;
+		line-height: 1.3;
+		margin-bottom: 0;
+	}
+}
+.subscribe-newsletter-form {
+	position: relative;
+	.form-control {
+		background-color: $optional-color;
+		color: $heading-color;
+		height: 70px;
+		font-size: 16px;
+		&::placeholder {
+			color: #666666;
+			font-size: 16px;
+		}
+	}
+	.main-btn {
+		border-color: $heading-color;
+		color: $heading-color;
+		position: absolute;
+		top: 50%;
+		right: 6px;
+		transform: translateY(-50%);
+		transition: $transition;
+		&:hover {
+			background-color: $main-color;
+			border-color: $main-color;
+		}
+	}
 }
