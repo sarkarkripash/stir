@@ -128,6 +128,32 @@ $box-shadow: 0 0 20px 3px rgba(0, 0, 0, 0.05);
             margin-left: 30px;
         }
     }
+    .banner-content-three {
+        h1 {
+            font-size: 60px;
+        }
+        .banner-btn {
+            position: relative;
+            top: 0;
+            right: 0;
+        }
+        .agency-info {
+            position: unset;
+            margin-top: 30px;
+            margin-bottom: 30px;
+            max-width: 100%;
+            p {
+                margin-bottom: 20px;
+            }
+        }
+    }
+    .banner-img-three {
+        bottom: 0;
+    }
+    .banner-area-three {
+        padding-top: 60px;
+        padding-bottom: 100px;
+    }
 
     /** Brands Area CSS
     ======================**/
@@ -539,6 +565,32 @@ $box-shadow: 0 0 20px 3px rgba(0, 0, 0, 0.05);
             margin-left: 30px;
         }
     }
+    .banner-content-three {
+        h1 {
+            font-size: 140px;
+        }
+        .banner-btn {
+            position: relative;
+            top: 0;
+            right: 0;
+        }
+        .agency-info {
+            position: unset;
+            margin-top: 30px;
+            margin-bottom: 30px;
+            max-width: 100%;
+            p {
+                margin-bottom: 20px;
+            }
+        }
+    }
+    .banner-img-three {
+        bottom: 0;
+    }
+    .banner-area-three {
+        padding-top: 60px;
+        padding-bottom: 100px;
+    }
 
     /** Brands Area CSS
     ======================**/
@@ -906,6 +958,25 @@ $box-shadow: 0 0 20px 3px rgba(0, 0, 0, 0.05);
             margin-bottom: 30px;
         }
     }
+    .banner-content-three {
+        h1 {
+            font-size: 140px;
+        }
+        .agency-info {
+            background-color: $white-color;
+            padding: 20px;
+            border-radius: 10px;
+            max-width: 360px;
+            bottom: -174px;
+            p {
+                margin-bottom: 20px;
+            }
+        }
+        .banner-btn {
+            top: 4px;
+            right: 200px;
+        }
+    }
 
     /** About Us Area CSS
     ======================**/
@@ -1048,6 +1119,17 @@ $box-shadow: 0 0 20px 3px rgba(0, 0, 0, 0.05);
             }
         }
     }
+    .main-nav {
+        .nav-right-options {
+            .social-link {
+                li {
+                    a {
+                        font-size: 15px;
+                    }
+                }
+            }
+        }
+    }
     
 
 }
@@ -1076,6 +1158,25 @@ $box-shadow: 0 0 20px 3px rgba(0, 0, 0, 0.05);
     ======================**/
     .banner-content {
         max-width: 830px;
+    }
+    .banner-content-three {
+        h1 {
+            font-size: 190px;
+        }
+        .agency-info {
+            background-color: $white-color;
+            padding: 20px;
+            border-radius: 10px;
+            max-width: 360px;
+            bottom: -174px;
+            p {
+                margin-bottom: 20px;
+            }
+        }
+        .banner-btn {
+            top: 4px;
+            right: 200px;
+        }
     }
 
     /** Services Area CSS
@@ -1118,14 +1219,6 @@ $box-shadow: 0 0 20px 3px rgba(0, 0, 0, 0.05);
             font-size: 35px;
         }
     }
-
-}
-
-/* Medium devices (tablets, 768px and up) Only Mobil Menu
-===========================================================*/
-@media only screen and (max-width: 991px) {
-    
-    
 
 }
 
@@ -1255,11 +1348,24 @@ $box-shadow: 0 0 20px 3px rgba(0, 0, 0, 0.05);
                     color: $white-color
                 }
             }
+            .src-btn {
+                background-color: transparent;
+                font-size: 16px;
+            }
+            .menu-btn {
+                background-color: transparent;
+                font-size: 16px;
+                margin-left: 20px;
+                margin-right: 10px;
+            }
         }
         &.style-two {
             border-bottom: 1px solid rgba(255, 255, 255, 0.05);
             padding-top: 20px !important;
             padding-bottom: 20px !important;
+        }
+        &.style-three {
+            border-bottom: 1px solid #dddddd;
         }
     }
     .mean-container {
@@ -1276,6 +1382,18 @@ $box-shadow: 0 0 20px 3px rgba(0, 0, 0, 0.05);
         }
     }
 
+    .search-offcanvas {
+        .offcanvas-header {
+            padding: 15px;
+        }
+        .offcanvas-body {
+            padding: 15px;
+            padding-top: 0;
+        }
+    }
+    .search-offcanvas {
+        height: 140px !important;
+    }
 }
 
 @media only screen and (min-width: 1400px) {
