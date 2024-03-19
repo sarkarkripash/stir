@@ -212,6 +212,11 @@ $box-shadow: 0 0 20px 3px rgba(0, 0, 0, 0.05);
                 font-size: 25px;
             }
         }
+        &.style-three {
+            h2 {
+                font-size: 25px;
+            }
+        }
     }
 
     /** Services Area CSS
@@ -239,7 +244,20 @@ $box-shadow: 0 0 20px 3px rgba(0, 0, 0, 0.05);
             margin-bottom: 15px;
         }
     }
-
+    .services-single-item-three {
+        padding: 25px;
+        h3 {
+            font-size: 21px;
+            margin-bottom: 15px;
+        }
+        p {
+            margin-bottom: 15px;
+        }
+        .read-more {
+            font-size: 15px;
+        }
+    }
+    
     /** Who We Are Area CSS
     ============================**/
     .who-we-are-img {
@@ -254,6 +272,20 @@ $box-shadow: 0 0 20px 3px rgba(0, 0, 0, 0.05);
         p {
             font-size: 16px;
         }
+    }
+    .who-we-are-content-two {
+        margin-left: 0;
+        margin-top: 30px;
+        h2 {
+            font-size: 25px;
+            margin-bottom: 20px;
+        }
+        p {
+            margin-bottom: 20px;
+        }
+    }
+    .who-we-are-img-two {
+        margin-left: 0;
     }
 
     /** Testimonial Area CSS
@@ -295,6 +327,11 @@ $box-shadow: 0 0 20px 3px rgba(0, 0, 0, 0.05);
                 font-size: 14px;
             }
         }
+        &.style-three {
+            p {
+                font-size: 16px;
+            }
+        }
     }
     .testimonial-slide-two {
         &.owl-theme {
@@ -303,6 +340,15 @@ $box-shadow: 0 0 20px 3px rgba(0, 0, 0, 0.05);
                 margin-top: 20px !important;
             }
         }
+    }
+    .testimonials-area-three {
+        padding-top: 60px;
+        &::before {
+            background-color: transparent;
+        }
+    }
+    .testimonial-img-three {
+        margin-right: 0;
     }
     
     /** Case Study Area CSS
@@ -341,6 +387,19 @@ $box-shadow: 0 0 20px 3px rgba(0, 0, 0, 0.05);
     }
     .accordion.accordion-content .accordion-item .accordion-header .accordion-button .count {
         margin-right: 5px;
+    }
+    .case-study-single-item-three {
+        margin-bottom: 50px;
+        h3 {
+            a {
+                font-size: 20px;
+            }
+        }
+        .circle-btn {
+            opacity: 1;
+            position: unset;
+            margin-top: 20px;
+        }
     }
 
     /** Counter Area CSS
@@ -407,6 +466,15 @@ $box-shadow: 0 0 20px 3px rgba(0, 0, 0, 0.05);
                 font-size: 30px;
                 padding: 30px 75px;
             }
+            h1 {
+                font-size: 85px;
+            }
+        }
+    }
+    .marquee-area-three .row {
+        --bs-gutter-x: 1.5rem;
+        .mt-100 {
+            margin-top: 50px;
         }
     }
     
@@ -482,6 +550,21 @@ $box-shadow: 0 0 20px 3px rgba(0, 0, 0, 0.05);
             h3 {
                 margin-bottom: 15px;
                 font-size: 20px;
+            }
+        }
+    }
+    .footer-single-item-three {
+        margin-bottom: 30px;
+        text-align: center;
+        h2 {
+            font-size: 30px;
+        }
+        .social-link {
+            max-width: 100%;
+            text-align: center;
+            li {
+                padding-top: 0 !important;
+                padding-bottom: 0 !important;
             }
         }
     }
@@ -649,6 +732,11 @@ $box-shadow: 0 0 20px 3px rgba(0, 0, 0, 0.05);
                 font-size: 30px;
             }
         }
+        &.style-three {
+            h2 {
+                font-size: 30px;
+            }
+        }
     }
 
     /** Services Area CSS
@@ -676,6 +764,19 @@ $box-shadow: 0 0 20px 3px rgba(0, 0, 0, 0.05);
             margin-bottom: 15px;
         }
     }
+    .services-single-item-three {
+        padding: 30px;
+        h3 {
+            font-size: 21px;
+            margin-bottom: 15px;
+        }
+        p {
+            margin-bottom: 15px;
+        }
+        .read-more {
+            font-size: 15px;
+        }
+    }
 
     /** Who We Are Area CSS
     ============================**/
@@ -692,6 +793,20 @@ $box-shadow: 0 0 20px 3px rgba(0, 0, 0, 0.05);
             font-size: 16px;
         }
     }
+    .who-we-are-content-two {
+        margin-left: 0;
+        margin-top: 30px;
+        h2 {
+            font-size: 30px;
+            margin-bottom: 20px;
+        }
+        p {
+            margin-bottom: 20px;
+        }
+    }
+    .who-we-are-img-two {
+        margin-left: 0;
+    }
 
     /** Testimonial Area CSS
     ============================**/
@@ -701,6 +816,22 @@ $box-shadow: 0 0 20px 3px rgba(0, 0, 0, 0.05);
             font-size: 18px;
             margin-bottom: 20px;
         }
+    }
+    .testimonials-area-three {
+        padding-top: 60px;
+        &::before {
+            background-color: transparent;
+        }
+    }
+    .testimonials-single-item-two {
+        &.style-three {
+            p {
+                font-size: 18px;
+            }
+        }
+    }
+    .testimonial-img-three {
+        margin-right: 0;
     }
 
     /** Case Study Area CSS
@@ -749,6 +880,19 @@ $box-shadow: 0 0 20px 3px rgba(0, 0, 0, 0.05);
             margin-top: 25px !important;
         }
     }
+    .case-study-single-item-three {
+        margin-bottom: 50px;
+        h3 {
+            a {
+                font-size: 22px;
+            }
+        }
+        .circle-btn {
+            opacity: 1;
+            position: unset;
+            margin-top: 20px;
+        }
+    }
 
     /** Get In Touch Area CSS
     ============================**/
@@ -784,6 +928,15 @@ $box-shadow: 0 0 20px 3px rgba(0, 0, 0, 0.05);
                 font-size: 30px;
                 padding: 30px 75px;
             }
+            h1 {
+                font-size: 90px;
+            }
+        }
+    }
+    .marquee-area-three .row {
+        --bs-gutter-x: 1.5rem;
+        .mt-100 {
+            margin-top: 50px;
         }
     }
 
@@ -816,6 +969,7 @@ $box-shadow: 0 0 20px 3px rgba(0, 0, 0, 0.05);
             }
         }
     }
+    
 
     /** Blog Area CSS
     ============================**/
@@ -890,6 +1044,21 @@ $box-shadow: 0 0 20px 3px rgba(0, 0, 0, 0.05);
             h3 {
                 margin-bottom: 15px;
                 font-size: 20px;
+            }
+        }
+    }
+    .footer-single-item-three {
+        margin-bottom: 30px;
+        text-align: center;
+        h2 {
+            font-size: 40px;
+        }
+        .social-link {
+            max-width: 100%;
+            text-align: center;
+            li {
+                padding-top: 0 !important;
+                padding-bottom: 0 !important;
             }
         }
     }
@@ -1031,6 +1200,14 @@ $box-shadow: 0 0 20px 3px rgba(0, 0, 0, 0.05);
             font-size: 39px;
         }
     }
+    .who-we-are-content-two {
+        margin-left: 0;
+        padding-top: 100px;
+        h2 {
+            font-size: 40px;
+        }
+    }
+
     /** Testimonial Area CSS
     ============================**/
     .testimonial-single-item {
@@ -1038,6 +1215,11 @@ $box-shadow: 0 0 20px 3px rgba(0, 0, 0, 0.05);
         p {
             font-size: 20px;
             margin-bottom: 20px;
+        }
+    }
+    .testimonials-area-three {
+        &::before {
+            display: none;
         }
     }
 
@@ -1130,6 +1312,12 @@ $box-shadow: 0 0 20px 3px rgba(0, 0, 0, 0.05);
             }
         }
     }
+
+    .marquee-area-three .row {
+        --bs-gutter-x: 1.5rem;
+    }
+
+     
     
 
 }
@@ -1217,6 +1405,14 @@ $box-shadow: 0 0 20px 3px rgba(0, 0, 0, 0.05);
     .blog-info-content {
         h2 {
             font-size: 35px;
+        }
+    }
+
+    /** Testimonials Area CSS
+    ============================**/
+    .testimonials-area-three {
+        &::before {
+            display: none;
         }
     }
 
