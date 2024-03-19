@@ -154,6 +154,16 @@ $box-shadow: 0 0 20px 3px rgba(0, 0, 0, 0.05);
         padding-top: 60px;
         padding-bottom: 100px;
     }
+    .page-banner-area {
+        padding-top: 60px;
+        padding-bottom: 60px;
+    }
+    .page-banner-content {
+        h2 {
+            font-size: 30px;
+            margin-bottom: 15px;
+        }
+    }
 
     /** Brands Area CSS
     ======================**/
@@ -193,6 +203,21 @@ $box-shadow: 0 0 20px 3px rgba(0, 0, 0, 0.05);
         }
         .mt-40 {
             margin-top: 20px;
+        }
+    }
+    .about-img-three {
+        margin-bottom: 30px;
+        img {
+            border-radius: 10px;
+        }
+    }
+    .about-content-three {
+        margin-left: 0;
+        h2 {
+            font-size: 25px;
+        }
+        p {
+            font-weight: 500;
         }
     }
 
@@ -674,6 +699,16 @@ $box-shadow: 0 0 20px 3px rgba(0, 0, 0, 0.05);
         padding-top: 60px;
         padding-bottom: 100px;
     }
+    .page-banner-area {
+        padding-top: 60px;
+        padding-bottom: 60px;
+    }
+    .page-banner-content {
+        h2 {
+            font-size: 35px;
+            margin-bottom: 20px;
+        }
+    }
 
     /** Brands Area CSS
     ======================**/
@@ -713,6 +748,18 @@ $box-shadow: 0 0 20px 3px rgba(0, 0, 0, 0.05);
         }
         .mt-40 {
             margin-top: 20px;
+        }
+    }
+    .about-img-three {
+        margin-bottom: 30px;
+        img {
+            border-radius: 10px;
+        }
+    }
+    .about-content-three {
+        margin-left: 0;
+        h2 {
+            font-size: 30px;
         }
     }
 
@@ -1146,6 +1193,10 @@ $box-shadow: 0 0 20px 3px rgba(0, 0, 0, 0.05);
             right: 200px;
         }
     }
+    .page-banner-area {
+        padding-top: 100px;
+        padding-bottom: 100px;
+    }
 
     /** About Us Area CSS
     ======================**/
@@ -1162,6 +1213,12 @@ $box-shadow: 0 0 20px 3px rgba(0, 0, 0, 0.05);
         .about-list {
             font-size: 16px;
             margin-bottom: 30px;
+        }
+    }
+    .about-content-three {
+        margin-left: 0;
+        h2 {
+            font-size: 40px;
         }
     }
 

@@ -1466,6 +1466,54 @@ textarea {
 		}
 	}
 }
+.page-banner-content {
+	text-align: center;
+	h2 {
+		color: $white-color;
+		font-size: 48px;
+		margin-bottom: 30px;
+	}
+	.page-breadcrumb {
+		line-height: 1;
+		li {
+			position: relative;
+			&::before {
+				content: "";
+				position: absolute;
+				top: 2px;
+    			right: -13px;
+				width: 1px;
+				height: 100%;
+				background-color: $white-color;
+				transform: rotate(15deg);
+			}
+			a {
+				text-decoration: none;
+				font-weight: 600;
+				color: $white-color;
+				&:hover {
+					color: $main-color;
+				}
+			}
+			span {
+				font-weight: 600;
+				&.active {
+					color: $main-color;
+				}
+			}
+			&:last-child {
+				&::before {
+					display: none;
+				}
+			}
+		}
+	}
+}
+.page-banner-area {
+	border-top: 1px solid rgba(255, 255, 255, 0.1);
+	padding-top: 130px;
+	padding-bottom: 130px;
+}
 
 /*
 16 - Brands Style
@@ -1542,6 +1590,25 @@ textarea {
 		margin-top: 40px;
 	}
 }
+.about-img-three {
+	img {
+		border-radius: 100px 0 100px 0;
+	}
+}
+.about-content-three {
+	margin-left: 50px;
+	h2 {
+		font-size: 48px;
+		margin-bottom: 20px;
+		line-height: 1.222;
+		&:last-child {
+			margin-bottom: 0;
+		}
+	}
+	p {
+		font-weight: 600;
+	}
+}
 
 /*
 18 - Services Style
@@ -1582,9 +1649,39 @@ textarea {
 			font-weight: 600;
 			font-size: 18px;
 			margin-bottom: 10px;
+			position: relative;
+			padding-left: 15px;
+			&::before {
+				content: "";
+				position: absolute;
+				top: 50%;
+				transform: translateY(-50%);
+				left: 0;
+				width: 6px;
+				height: 6px;
+				background-color: #74787C;
+			}
 			&:last-child {
 				margin-bottom: 0;
 			}
+		}
+	}
+	&.style-two {
+		border-color: #F4F4F4;
+		background-color: $white-color;
+		.icon {
+			border: 1px solid rgba(253, 98, 25, 0.15);
+			img {
+				filter: invert(1);
+			}
+		}
+		h3 {
+			a {
+				color: $heading-color;
+			}
+		}
+		p {
+			border-color: #F4F4F4;
 		}
 	}
 	&:hover {
@@ -1596,6 +1693,13 @@ textarea {
 		h3 {
 			a {
 				color: $main-color;
+			}
+		}
+		&.style-two {
+			.icon {
+				img {
+					filter: brightness(100);
+				}
 			}
 		}
 	}
@@ -2133,6 +2237,21 @@ textarea {
 			}
 		}
 	}
+	&.style-two {
+		.form-group {
+			.form-control {
+				background-color: $white-color;
+				border-color: #EFEFEF;
+				color: $heading-color;
+			}
+		}
+		.circle-btn {
+			i {
+				border-color: $main-color;
+			}
+			color: $main-color !important;
+		}
+	}
 }
 
 /*
@@ -2306,6 +2425,26 @@ textarea {
 			}
 		}
 	}
+	&.style-three {
+		h3 {
+			color: $white-color;
+		}
+		.social-link {
+			li {
+				a {
+					color: $white-color;
+				}
+			}
+		}
+		.form-control {
+			background-color: #171717;
+			border-color: #171717;
+			color: $white-color;
+			&::placeholder {
+				color: #575757;
+			}
+		}
+	}
 }
 .copy-right {
 	border-top: 1px solid #F4F4F4;
@@ -2325,6 +2464,9 @@ textarea {
 		span {
 			color: $optional-color;
 		}
+	}
+	&.style-three {
+		border-color: #171717;
 	}
 }
 .copyright-area {
