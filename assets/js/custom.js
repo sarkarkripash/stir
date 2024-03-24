@@ -222,6 +222,7 @@
     // });
 
 	// MixItUp JS
+
 	try {
         var mixer = mixitup('#Container', {
             controls: {
@@ -230,19 +231,52 @@
         });
     } catch (err) {}
 
+	// Password Show Hide
+	try {
+		const passwordInput = document.getElementById("password");
+		const passwordToggleIcon = document.querySelector(".password-toggle-icon");
+		passwordToggleIcon.addEventListener("click", function() {
+			if (passwordInput.type === "password") {
+				passwordInput.type = "text";
+				passwordToggleIcon.classList.remove("fa-eye-slash");
+				passwordToggleIcon.classList.add("fa-eye");
+			} else {
+				passwordInput.type = "password";
+				passwordToggleIcon.classList.remove("fa-eye");
+				passwordToggleIcon.classList.add("fa-eye-slash");
+			}
+		});
+	} catch (err) {}
 
-	const passwordInput = document.getElementById("password");
-	const passwordToggleIcon = document.querySelector(".password-toggle-icon");
-	passwordToggleIcon.addEventListener("click", function() {
-		if (passwordInput.type === "password") {
-		passwordInput.type = "text";
-		passwordToggleIcon.classList.remove("fa-eye-slash");
-		passwordToggleIcon.classList.add("fa-eye");
-		} else {
-		passwordInput.type = "password";
-		passwordToggleIcon.classList.remove("fa-eye");
-		passwordToggleIcon.classList.add("fa-eye-slash");
-		}
+	// Input Plus & Minus Number JS
+	$('.input-counter').each(function() {
+		var spinner = jQuery(this),
+		input = spinner.find('input[type="text"]'),
+		btnUp = spinner.find('.plus-btn'),
+		btnDown = spinner.find('.minus-btn'),
+		min = input.attr('min'),
+		max = input.attr('max');
+		
+		btnUp.on('click', function() {
+			var oldValue = parseFloat(input.val());
+			if (oldValue >= max) {
+				var newVal = oldValue;
+			} else {
+				var newVal = oldValue + 1;
+			}
+			spinner.find("input").val(newVal);
+			spinner.find("input").trigger("change");
+		});
+		btnDown.on('click', function() {
+			var oldValue = parseFloat(input.val());
+			if (oldValue <= min) {
+				var newVal = oldValue;
+			} else {
+				var newVal = oldValue - 1;
+			}
+			spinner.find("input").val(newVal);
+			spinner.find("input").trigger("change");
+		});
 	});
 
 

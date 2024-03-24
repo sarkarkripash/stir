@@ -667,6 +667,32 @@ $box-shadow: 0 0 20px 3px rgba(0, 0, 0, 0.05);
         margin-left: 0;
         margin-top: 30px;
     }
+
+    /** Product Details main Area CSS
+    ============================**/
+    .product-details-content {
+        margin-left: 0;
+        h3 {
+            margin-bottom: 10px;
+        }
+        .price {
+            margin-bottom: 10px;
+        }
+    }
+    .product-info-tabs {
+        .nav-item {
+            margin-right: 18px;
+            .nav-link {
+                font-size: 16px;
+            }
+        }
+    }
+    
+    /** Cart Area CSS
+    ============================**/
+    .cart-subtotal {
+        padding: 25px;
+    }
     
     
     
@@ -1260,6 +1286,24 @@ $box-shadow: 0 0 20px 3px rgba(0, 0, 0, 0.05);
         margin-left: 0;
         margin-top: 30px;
     }
+
+    /** Product Details main Area CSS
+    ============================**/
+    .product-details-content {
+        margin-left: 0;
+        h3 {
+            margin-bottom: 10px;
+        }
+        .price {
+            margin-bottom: 10px;
+        }
+    }
+
+    /** Cart Area CSS
+    ============================**/
+    .cart-subtotal {
+        padding: 25px;
+    }
     
     
   
@@ -1550,6 +1594,18 @@ $box-shadow: 0 0 20px 3px rgba(0, 0, 0, 0.05);
     ============================**/
     .contact-info {
         margin-left: 0;
+    }
+
+    /** Product Details Area CSS
+    ============================**/
+    .product-details-content {
+        margin-left: 0;
+    }
+
+    /** Cart Area CSS
+    ============================**/
+    .cart-subtotal {
+        padding: 25px;
     }
      
     

@@ -426,22 +426,24 @@ textarea {
 09 - Main Btn Style
 <<<<======================================================>>>>*/ 
 .main-btn {
-	background-color: $optional-color;
-	color: $heading-color;
+	background-color: $heading-color;
+	color: $white-color;
 	padding: 15.5px 30px;
 	font-weight: 500;
 	font-size: 16px;
-	font-family: $helvetica-neue-font-family;
 	text-decoration: none;
 	border-radius: 50px;
 	display: inline-block;
-	transform: $transition;
+	transition: $transition;
 	i {
 		margin-left: 20px;
 	}
 	&:hover {
 		background-color: $main-color;
 		color: $white-color;
+	}
+	&.active {
+		background-color: $main-color;
 	}
 	&.border-btn {
 		background-color: transparent;
@@ -451,6 +453,15 @@ textarea {
 		&:hover {
 			background-color: $optional-color;
 			color: $heading-color;
+		}
+	}
+	&.style-two { 
+		font-family: $helvetica-neue-font-family;
+		background-color: $optional-color;
+		color: $heading-color;
+		font-size: 15px;
+		&:hover {
+			background-color: $main-color;
 		}
 	}
 	&.style-three {
@@ -650,6 +661,7 @@ textarea {
 			.main-btn {
 				background-color: #FF4375;
 				color: $white-color;
+				font-family: $helvetica-neue-font-family;
 			}
 		}
 		.navbar {
@@ -2171,7 +2183,6 @@ textarea {
 	}
 }
 
-
 /*
 22 - FAQ Style
 <<<<======================================================>>>>*/
@@ -3679,6 +3690,457 @@ textarea {
 	.social-link {
 		span {
 			margin-right: 10px;
+		}
+	}
+}
+
+/* Product Details Area Style
+<<<<======================================================>>>>*/
+.product-details-content {
+	margin-left: 40px;
+	h3 {
+		font-size: 20px;
+		margin-bottom: 25px;
+	}
+	.price {
+		font-weight: 600;
+		font-size: 18px;
+		color: $heading-color;
+		margin-bottom: 20px;
+		display: block;
+		del {
+			color: $body-color;
+		}
+	}
+	.review {
+		margin-bottom: 20px;
+		i {
+			color: #FFC400;
+		}
+	}
+	.sub-title {
+		display: block;
+		margin-bottom: 10px;
+	}
+	.color-grid {
+		margin-bottom: 30px;
+		input[type=radio] {
+			display: none;
+		}
+		  input[type=radio]:checked + label {
+			span {
+				transform: scale(1.25);
+			}
+			.red {
+				border: 1px solid #711313;
+			}
+			.orange {
+				border: 1px solid #873a08;
+			}
+			.yellow {
+				border: 1px solid #816102;
+			}
+			.olive {
+				border: 1px solid #505a0b;
+			}
+			.green {
+				border: 1px solid #0e4e1d;
+			}
+			.teal {
+				border: 1px solid #003633;
+			}
+			.blue {
+				border: 1px solid #103f62;
+			}
+			.violet {
+				border: 1px solid #321a64;
+			}
+			.purple {
+				border: 1px solid #501962;
+			}
+			.pink {
+				border: 1px solid #851554;
+			}
+		}
+		label {
+			display: inline-block;
+			width: 20px;
+			height: 20px;
+			margin-right: 10px;
+			cursor: pointer;
+			border-radius: 50px;
+			span {
+				display: block;
+				width: 100%;
+				height: 100%;
+				transition: transform 0.2s ease-in-out;
+				border-radius: 50px;
+				&.red {
+					background: #6C7152;
+				}
+				&.orange {
+					background: #222222;
+				}
+				&.yellow {
+					background: #F2D2A9;
+				}
+				&.olive {
+					background: #777777;
+				}
+				&.green {
+					background: #C8815F;
+				}
+				&.teal {
+					background: #00B5AD;
+				}
+				&.blue {
+					background: #2185D0;
+				}
+				&.violet {
+					background: #6435C9;
+				}
+				&.purple {
+					background: #A333C8;
+				}
+				&.pink {
+					background: #E03997;
+				}
+			}
+			&:hover {
+				span {
+					transform: scale(1.25);
+				}
+			}
+		}
+	}
+	.wish-btn {
+		width: 55px;
+		height: 55px;
+		line-height: 55px;
+		border: 1px solid #F4F4F4;
+		border-radius: 50px;
+		text-align: center;
+		font-size: 20px;
+		&:hover {
+			background-color: $main-color;
+			color: $white-color;
+		}
+	}
+	.features-list {
+		margin-bottom: 30px;
+		li {
+			margin-bottom: 15px;
+			&:last-child {
+				margin-bottom: 0;
+			}
+			span {
+				font-weight: 600;
+				margin-right: 10px;
+			}
+		}
+	}
+}
+.input-counter {
+	border: 1px solid #F4F4F4;
+	padding: 14.5px 12px;
+	width: 120px;
+	border-radius: 50px;
+	.minus-btn {
+		padding: 0;
+		cursor: pointer;
+	}
+	.plus-btn {
+		padding: 0;
+		cursor: pointer;
+	}
+	input {
+		border: none;
+		text-align: center;
+		padding: 0;
+		width: 50px;
+		&:focus {
+			box-shadow: none;
+			border: none;
+		}
+	}	
+}
+.quantity-wrap {
+	max-width: 518px;
+	margin-bottom: 30px;
+}
+.product-info-tabs {
+	border: none;
+	margin-bottom: 30px;
+	.nav-item {
+		margin-right: 85px;
+		&:last-child {
+			margin-right: 0;
+		}
+		.nav-link {
+			font-size: 18px;
+			font-weight: 600;
+			border-bottom: 2px solid $white-color !important;
+			border: none;
+			color: $body-color;
+			background-color: transparent;
+			padding: 10px 0;
+			&.active {
+				background-color: transparent;
+				color: $heading-color;
+				border-color: $heading-color !important;
+			}
+		}
+	}
+}
+.review-list {
+	li {
+		margin-bottom: 30px;
+		position: relative;
+		&:last-child {
+			margin-bottom: 0;
+		}
+		img {
+			width: 120px;
+			border-radius: 4px;
+		}
+		h3 {
+			font-size: 20px;
+			margin-bottom: 5px;
+		}
+		span {
+			font-weight: 600;
+			display: block;
+			margin-bottom: 10px;
+		}
+		.main-btn {
+			position: absolute;
+			top: 0;
+			right: 0;
+			padding: 6px 25px;
+		}
+	}
+}
+.review-form {
+	margin-top: 50px;
+	h3 {
+		font-size: 25px;
+		margin-bottom: 20px;
+	}
+	.form-group {
+		margin-bottom: 25px;
+	}
+}
+.product-info-area {
+	.container {
+		max-width: 920px;
+	}
+}
+
+/* Cart Area Style
+<<<<======================================================>>>>*/
+.cart-single-item {
+	border: 1px solid #EDF2F6;
+	margin-bottom: 25px;
+	h3 {
+		font-size: 18px;
+		font-weight: 600;
+		margin-bottom: 20px;
+	}
+	.color {
+		display: block;
+		margin-bottom: 25px;
+	}
+	.input-counter {
+		padding: 9.5px 12px;
+	}
+	.price {
+		color: $heading-color;
+	}
+	.close-btn {
+		color: $heading-color;
+		background-color: transparent;
+		text-align: right;
+		margin-bottom: 50px;
+	}
+	&.border-0 {
+		border-bottom: 1px solid rgba(186, 216, 227, 0.50) !important;
+		padding-bottom: 30px;
+		margin-bottom: 30px;
+	}
+}
+.cart-title {
+	margin-bottom: 30px;
+	h3 {
+		font-size: 18px;
+		font-weight: 600;
+	}
+}
+.cart-subtotal {
+	background-color: #F7FAFA;
+	padding: 40px;
+	h3 {
+		color: #030303;
+		font-size: 18px;
+		font-weight: 600;
+		margin-bottom: 0;
+	}
+	.shipping {
+		color: $heading-color;
+		display: block;
+		margin-bottom: 20px;
+	}
+	.radio-button-container {
+		color: rgba(0,0,0,0.75);
+		display: block;
+		position: relative;
+		padding-left: 30px;
+		line-height: 25px;
+		margin-bottom: 12px;
+		cursor: pointer;
+		font-size: 18px;
+		-webkit-user-select: none;
+		-moz-user-select: none;
+		-ms-user-select: none;
+		user-select: none;
+	}
+	.radio-button-container input {
+		position: absolute;
+		opacity: 0;
+		cursor: pointer;
+	}
+	.checkmark {
+		position: absolute;
+		top: 3px;
+		left: 0;
+		height: 21px;
+		width: 21px;
+		background-color: rgba(0,0,0,0);
+		border-radius: 50%;
+		border: 2px solid rgba(0,0,0,0.25);
+		transition: all 0.3s;
+	}
+	.radio-button-container:hover input ~ .checkmark {
+		border-color: rgba(0,0,0,0.5);
+	}
+	.radio-button-container input:checked ~ .checkmark {
+		background-color: rgba(0,0,0,0);
+		border-color: #F76B6A;
+	}
+	.checkmark:after {
+		content: "";
+		position: absolute;
+		display: none;
+	}
+	.radio-button-container input:checked ~ .checkmark:after {
+		display: block;
+	}
+	.radio-button-container .checkmark:after {
+		top: 2px;
+		left: 2px;
+		width: 13px;
+		height: 13px;
+		border-radius: 50%;
+		background: #F76B6A;
+	}
+	.change {
+		color: #FD6219;
+		display: block;
+		margin-bottom: 25px;
+	}
+	.border-0 {
+		border-bottom: 1px solid rgba(186, 216, 227, 0.50) !important;
+		padding-bottom: 30px;
+		margin-bottom: 30px;
+	}
+	.transfer {
+		h3 {
+			font-size: 18px;
+			font-weight: 600;
+			margin-bottom: 20px;
+		}
+		.accordion {
+			.accordion-item {
+				border: none;
+				padding: 0;
+				background-color: transparent;
+				margin-bottom: 20px;
+				.accordion-header {
+					.accordion-button {
+						background-color: transparent;
+						padding: 0;
+						padding-left: 30px;
+						color: $heading-color;
+						&::after {
+							background-image: unset;
+							width: 15px;
+							height: 15px;
+							background-color: #BAD8E3;
+							border-radius: 50px;
+							padding: 3px;
+							position: absolute;
+							left: 3px;
+						}
+						&::before {
+							content: "";
+							position: absolute;
+							background-image: unset;
+							width: 21px;
+							height: 21px;
+							border: 1px solid #BAD8E3;
+							border-radius: 50px;
+							padding: 3px;
+							left: 0;
+						}
+						&:focus {
+							box-shadow: none;
+						}
+						&:not(.collapsed) {
+							box-shadow: none;
+							&::after {
+								background-color: #f76b6a;
+							}
+							&::before {
+								border-color: #f76b6a;
+							}
+						}
+					}
+				}
+			}
+		}
+		.accordion-body {
+			padding: 0;
+			margin-top: 10px;
+			padding-left: 30px;
+		}
+		.form-check {
+			a {
+				color: $main-color;
+				text-decoration: none;
+			}
+		}
+	}
+}
+.checkout-form {
+	h3 {
+		font-size: 18px;
+		font-weight: 600;
+		margin-bottom: 50px;
+	}
+	h4 {
+		font-size: 16px;
+		font-weight: 400;
+		margin-bottom: 30px;
+	}
+	.form-group {
+		.form-control {
+			border-color: #F4F4F4;
+			&::placeholder {
+				color: $body-color;
+				font-size: 16px;
+			}
+			&:focus {
+				border-color: $main-color;
+			}
 		}
 	}
 }

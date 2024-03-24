@@ -261,17 +261,17 @@
 		<!--=== Start Product Details Area ===-->
 		<div class="product-details-area ptb-100">
 			<div class="container">
-				<div class="row">
+				<div class="row align-items-center">
 					<div class="col-lg-6">
 						<div class="product-details-img">
 							<img src="assets/images/product-details-img.jpg" alt="product-details-img">
 						</div>
 					</div>
 					<div class="col-lg-6">
-						<div class="product-details-content">
+						<div class="product-details-content mt-4 mt-lg-0">
 							<h3>Wifi Router Very Latest Model</h3>
 							<span class="price"><del>$30.00</del>  $25.00</span>
-							<div class="d-flex align-items-center gap-1">
+							<div class="d-flex align-items-center gap-2 review">
 								<i class="fa-solid fa-star"></i>
 								<i class="fa-solid fa-star"></i>
 								<i class="fa-solid fa-star"></i>
@@ -280,14 +280,370 @@
 								<span>(5)</span>
 							</div>
 							<p>Fashion is an ever-evolving form of self-expression that transcends time & culture. It’s a dynamic art form that allows individuals to showcase their personality, creativity, & identity through clothing, accessories, & style choices.</p>
-							<span class="color">Color: White</span>
-							.
+							<span class="sub-title">Color: White</span>
+							<ul class="d-flex color-grid ps-0 list-unstyled">
+								<li>
+									<input type="radio" name="color" id="red" value="red" />
+									<label for="red"><span class="red"></span></label>
+								</li>
+								<li>
+									<input type="radio" name="color" id="green" />
+									<label for="green"><span class="green"></span></label>
+								</li>
+								<li>
+									<input type="radio" name="color" id="yellow" />
+									<label for="yellow"><span class="yellow"></span></label>
+								</li>
+								<li>
+									<input type="radio" name="color" id="olive" />
+									<label for="olive"><span class="olive"></span></label>
+								</li>
+								<li>
+									<input type="radio" name="color" id="orange" />
+									<label for="orange"><span class="orange"></span></label>
+								</li>
+							</ul>
+							<span class="sub-title">Quantity</span>
+							<div class="d-flex justify-content-xl-between align-items-center flex-wrap gap-2 quantity-wrap">
+								<div class="input-counter d-flex justify-content-between">
+									<span class="minus-btn">
+										<i class="fa-regular fa-minus"></i>
+									</span>
+									<input type="text" value="1">
+									<span class="plus-btn">
+										<i class="fa-regular fa-plus"></i>
+									</span>
+								</div>
+								<a href="#" class="main-btn active">
+									Add To Cart
+								</a>
+								<a href="#" class="main-btn">
+									Buy Now
+								</a>
+								<a href="#" class="wish-btn">
+									<i class="fa-regular fa-heart"></i>
+								</a>
+							</div>
+							<ul class="features-list ps-0 list-unstyled">
+								<li>
+									<span>SKU:</span> Wireless Router
+								</li>
+								<li>
+									<span>Vendor:</span> Alessi
+								</li>
+								<li>
+									<span>Availability:</span> Available Stock
+								</li>
+								<li>
+									<span>Categories:</span> Technology, Wireless, Official, Business, Gift, Best Selling
+								</li>
+							</ul>
+							<ul class="social-link d-flex gap-3 align-items-center ps-0 mb-0 list-unstyled">
+								<li>
+									<span>Share:</span>
+								</li>
+								<li>
+									<a href="https://www.facebook.com/" target="_blank">
+										<i class="fa-brands fa-facebook-f"></i>
+									</a>
+								</li>
+								<li>
+									<a href="https://www.twitter.com/" target="_blank">
+										<i class="fa-brands fa-twitter"></i>
+									</a>
+								</li>
+								<li>
+									<a href="https://www.instagram.com/" target="_blank">
+										<i class="fa-brands fa-instagram"></i>
+									</a>
+								</li>
+								<li>
+									<a href="https://www.pinterest.com/" target="_blank">
+										<i class="fa-brands fa-pinterest-p"></i>
+									</a>
+								</li>
+								<li>
+									<a href="https://www.tiktok.com/" target="_blank">
+										<i class="fa-brands fa-tiktok"></i>
+									</a>
+								</li>
+								<li>
+									<a href="https://www.linkedin.com/" target="_blank">
+										<i class="fa-brands fa-linkedin-in"></i>
+									</a>
+								</li>
+							</ul>
 						</div>
 					</div>
 				</div>
 			</div>
 		</div>
 		<!--=== End Product Details Area ===-->
+
+		<!--=== Start Product Info Area ===-->
+		<div class="product-info-area pb-100">
+			<div class="container">
+				<ul class="nav nav-tabs product-info-tabs justify-content-center" id="myTab" role="tablist">
+					<li class="nav-item" role="presentation">
+					  	<button class="nav-link active" id="description-tab" data-bs-toggle="tab" data-bs-target="#description-tab-pane" type="button" role="tab" aria-controls="description-tab-pane" aria-selected="true">Description</button>
+					</li>
+					<li class="nav-item" role="presentation">
+					  	<button class="nav-link" id="size-chart-tab" data-bs-toggle="tab" data-bs-target="#size-chart-tab-pane" type="button" role="tab" aria-controls="size-chart-tab-pane" aria-selected="false">Size Chart</button>
+					</li>
+					<li class="nav-item" role="presentation">
+					  	<button class="nav-link" id="reviews-tab" data-bs-toggle="tab" data-bs-target="#reviews-tab-pane" type="button" role="tab" aria-controls="reviews-tab-pane" aria-selected="false">Reviews (3)</button>
+					</li>
+				</ul>
+				<div class="tab-content" id="myTabContent">
+					<div class="tab-pane fade show active" id="description-tab-pane" role="tabpanel" aria-labelledby="description-tab" tabindex="0">
+						<p>Fashion isn’t just about clothing; it’s a reflection of the zeitgeist, encapsulating societal attitudes, values, and aspirations. It's a platform for innovation, where designers experiment with textures, colors, fabrics, & silhouettes, pushing the buttings of creativity and challenging conventional norms.</p>
+						<p>The democratization of fashion through social media & digital platforms has revolutionized the industry, making trends accessible to a global audience instantaneously. Influencers, bloggers, & content creators play a pivotal role in shaping fashion narratives, influencing consumer choices, and redefining traditional fashion norms.</p>
+					</div>
+					<div class="tab-pane fade" id="size-chart-tab-pane" role="tabpanel" aria-labelledby="size-chart-tab" tabindex="0">
+						<table class="table table-bordered">
+							<tbody>
+								<tr>
+									<td>Wifi Router</td>
+									<td>340 X 450</td>
+								</tr>
+								<tr>
+									<td>Wifi Router</td>
+									<td>340 X 450</td>
+								</tr>
+								<tr>
+									<td>Wifi Router</td>
+									<td>340 X 450</td>
+								</tr>
+								<tr>
+									<td>Wifi Router</td>
+									<td>340 X 450</td>
+								</tr>
+							</tbody>
+						</table>
+						
+					</div>
+					<div class="tab-pane fade" id="reviews-tab-pane" role="tabpanel" aria-labelledby="reviews-tab" tabindex="0">
+						<ul class="review-list ps-0 mb-0 list-unstyled">
+							<li>
+								<div class="d-md-flex align-items-center">
+									<div class="flex-shrink-0">
+									  	<img src="assets/images/team-1.jpg" alt="team">
+									</div>
+									<div class="flex-grow-1 ms-md-4 mt-3 mt-md-0">
+									  	<h3>Diana Wilson</h3>
+										<span>UI/UX Designer</span>
+										<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Error tempora quisquam quas autem sunt doloribus aliquam harum illo corrupti. Quae neque fugit, tempore asperiores iste laudantium nulla doloribus beatae labore!</p>
+									</div>
+								</div>
+								<a href="#" class="main-btn">
+									Reply
+								</a>
+							</li>
+							<li>
+								<div class="d-md-flex align-items-center">
+									<div class="flex-shrink-0">
+									  	<img src="assets/images/team-2.jpg" alt="team">
+									</div>
+									<div class="flex-grow-1 ms-md-4 mt-3 mt-md-0">
+									  	<h3>Anne Dew</h3>
+										<span>Developer</span>
+										<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Error tempora quisquam quas autem sunt doloribus aliquam harum illo corrupti. Quae neque fugit, tempore asperiores iste laudantium nulla doloribus beatae labore!</p>
+									</div>
+								</div>
+								<a href="#" class="main-btn">
+									Reply
+								</a>
+							</li>
+							<li>
+								<div class="d-md-flex align-items-center">
+									<div class="flex-shrink-0">
+									  	<img src="assets/images/team-3.jpg" alt="team">
+									</div>
+									<div class="flex-grow-1 ms-md-4 mt-3 mt-md-0">
+									  	<h3>Alex Wilson</h3>
+										<span>Manger</span>
+										<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Error tempora quisquam quas autem sunt doloribus aliquam harum illo corrupti. Quae neque fugit, tempore asperiores iste laudantium nulla doloribus beatae labore!</p>
+									</div>
+								</div>
+								<a href="#" class="main-btn">
+									Reply
+								</a>
+							</li>
+						</ul>
+						<div class="review-form">
+							<h3>Writ A review</h3>
+							<form>
+								<div class="row">
+									<div class="col-lg-6">
+										<div class="form-group">
+											<input type="text" class="form-control" placeholder="First Name">
+										</div>
+									</div>
+									<div class="col-lg-6">
+										<div class="form-group">
+											<input type="text" class="form-control" placeholder="Last Name">
+										</div>
+									</div>
+									<div class="col-lg-6">
+										<div class="form-group">
+											<input type="email" class="form-control" placeholder="Email">
+										</div>
+									</div>
+									<div class="col-lg-6">
+										<div class="form-group">
+											<input type="text" class="form-control" placeholder="Subject">
+										</div>
+									</div>
+									<div class="col-lg-12">
+										<div class="form-group">
+											<textarea class="form-control" placeholder="Subject" cols="30" rows="6"></textarea>
+										</div>
+									</div>
+									<div class="col-lg-12">
+										<div class="form-group">
+											<button type="submit" class="main-btn">Submit</button>
+										</div>
+									</div>
+								</div>
+							</form>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!--=== End Product Info Area ===-->
+
+		<!--=== Start Products Area ===-->
+		<div class="products-area pb-100">
+			<div class="container">
+				<div class="section-title">
+					<h2>You May Also Like</h2>
+				</div>
+				<div class="row justify-content-center">
+					<div class="col-lg-3 col-sm-6">
+						<div class="product-single-item">
+							<div class="product-img">
+								<a href="#" class="d-block">
+									<img src="assets/images/product-5.jpg" alt="product">
+								</a>
+								<ul class="ps-0 mb-0 list-unstyled social-link">
+									<li>
+										<a href="#">
+											<i class="fa-regular fa-heart"></i>
+										</a>
+									</li>
+									<li>
+										<a href="#">
+											<i class="fa-regular fa-eye"></i>
+										</a>
+									</li>
+									<li>
+										<a href="#">
+											<i class="fa-sharp fa-solid fa-arrows-rotate"></i>
+										</a>
+									</li>
+								</ul>
+							</div>
+							<h3>
+								<a href="#">Smart TRE 5744U6322 (77 Cm)</a>
+							</h3>
+							<span><del>$30.00</del>  $25.00</span>
+						</div>
+					</div>
+					<div class="col-lg-3 col-sm-6">
+						<div class="product-single-item">
+							<div class="product-img">
+								<a href="#" class="d-block">
+									<img src="assets/images/product-6.jpg" alt="product">
+								</a>
+								<ul class="ps-0 mb-0 list-unstyled social-link">
+									<li>
+										<a href="#">
+											<i class="fa-regular fa-heart"></i>
+										</a>
+									</li>
+									<li>
+										<a href="#">
+											<i class="fa-regular fa-eye"></i>
+										</a>
+									</li>
+									<li>
+										<a href="#">
+											<i class="fa-sharp fa-solid fa-arrows-rotate"></i>
+										</a>
+									</li>
+								</ul>
+							</div>
+							<h3>
+								<a href="#">Smart TRE 5744U6322 (77 Cm)</a>
+							</h3>
+							<span><del>$30.00</del>  $25.00</span>
+						</div>
+					</div>
+					<div class="col-lg-3 col-sm-6">
+						<div class="product-single-item">
+							<div class="product-img">
+								<a href="#" class="d-block">
+									<img src="assets/images/product-7.jpg" alt="product">
+								</a>
+								<ul class="ps-0 mb-0 list-unstyled social-link">
+									<li>
+										<a href="#">
+											<i class="fa-regular fa-heart"></i>
+										</a>
+									</li>
+									<li>
+										<a href="#">
+											<i class="fa-regular fa-eye"></i>
+										</a>
+									</li>
+									<li>
+										<a href="#">
+											<i class="fa-sharp fa-solid fa-arrows-rotate"></i>
+										</a>
+									</li>
+								</ul>
+							</div>
+							<h3>
+								<a href="#">Smart TRE 5744U6322 (77 Cm)</a>
+							</h3>
+							<span><del>$30.00</del>  $25.00</span>
+						</div>
+					</div>
+					<div class="col-lg-3 col-sm-6 ">
+						<div class="product-single-item">
+							<div class="product-img">
+								<a href="#" class="d-block">
+									<img src="assets/images/product-8.jpg" alt="product">
+								</a>
+								<ul class="ps-0 mb-0 list-unstyled social-link">
+									<li>
+										<a href="#">
+											<i class="fa-regular fa-heart"></i>
+										</a>
+									</li>
+									<li>
+										<a href="#">
+											<i class="fa-regular fa-eye"></i>
+										</a>
+									</li>
+									<li>
+										<a href="#">
+											<i class="fa-sharp fa-solid fa-arrows-rotate"></i>
+										</a>
+									</li>
+								</ul>
+							</div>
+							<h3>
+								<a href="#">Smart TRE 5744U6322 (77 Cm)</a>
+							</h3>
+							<span><del>$30.00</del>  $25.00</span>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!--=== End Products Area ===-->
 
 		<!--=== Start Footer Area ===-->
 		<div class="footer-area pt-100 pb-75 bg-color-030303">
