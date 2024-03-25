@@ -2,7 +2,6 @@
 <=={Master Stylesheet}==>
 
 Project Name: Stir
-Primary use: 
 Version: 1.0
 
 ============================================
@@ -15,8 +14,38 @@ Version: 1.0
 05 - Go Top Style
 06 - Video Btn Style
 07 - Pagination Style
-08 - Animation Style
 09 - Main Btn Style
+10 - Main Detail Btn Style
+12 - Main Section Title Style
+13 - Main Header Style
+14 - Main Navbar Style
+15 - Banner Style
+16 - Brands Style
+17 - About Us Style
+18 - Services Style
+19 - who-we-are Style
+20 - Testimonial Style
+21 - case study Style
+22 - FAQ Style
+23 - Appointment Style
+24 - Footer Style
+25 - Footer Style
+26 - Counter Style
+27 - Cases Style
+28 - Get In Touch Style
+29 - Team Style
+30 - Marquee Area Style
+31 - Blog Area Style
+32 - Subscribe Newsletter Area Style
+33 - Video Area Style
+34 - Cases Details Area Style
+35 - Blog Details Area Style
+36 - Products Area Style
+37 - Authentication Area Style
+38 - Contact Us Main Area Style
+39 - Product Details Area Style
+40 - Cart Area Style
+41 - Privacy Policy Area Style
 
 ============================================
 */
@@ -2041,7 +2070,7 @@ textarea {
 }
 
 /*
-21 - case study Style
+21 - Case Study Style
 <<<<======================================================>>>>*/
 .case-study-content-wrap {
 	.slider {
@@ -2934,11 +2963,9 @@ textarea {
 	}
 }
 
-/*
-30 - Team Style
-<<<<======================================================>>>>*/
 
-/* Marquee Area Style
+/*
+30 - Marquee Area Style
 <<<<======================================================>>>>*/
 .marquee-wrapper {
     overflow: hidden;
@@ -3016,7 +3043,8 @@ textarea {
 	}
 }
 
-/* Blog Area Style
+/* 
+31 - Blog Area Style
 <<<<======================================================>>>>*/
 .blog-info-content {
 	margin-bottom: 25px;
@@ -3107,7 +3135,8 @@ textarea {
 	
 }
 
-/* Subscribe Newsletter Area Style
+/* 
+32 - Subscribe Newsletter Area Style
 <<<<======================================================>>>>*/
 .subscribe-newsletter-area {
 	padding-top: 150px;
@@ -3159,7 +3188,8 @@ textarea {
 	}
 }
 
-/* Video Area Style
+/* 
+33 - Video Area Style
 <<<<======================================================>>>>*/
 .video-img-wrap {
 	position: relative;
@@ -3240,7 +3270,8 @@ textarea {
 	}
 }
 
-/* Cases Details Area Style
+/* 
+34 - Cases Details Area Style
 <<<<======================================================>>>>*/
 .cases-details-top-content {
 	padding: 60px 0;
@@ -3288,7 +3319,8 @@ textarea {
 	}
 }
 
-/* Blog Details Area Style
+/* 
+35 - Blog Details Area Style
 <<<<======================================================>>>>*/
 .blog-details-content {
 	.blog-details-img {
@@ -3413,7 +3445,8 @@ textarea {
 	}
 }
 
-/* Products Area Style
+/* 
+36 - Products Area Style
 <<<<======================================================>>>>*/
 .product-single-item {
 	margin-bottom: 25px;
@@ -3538,7 +3571,8 @@ textarea {
 	}
 }
 
-/* Authentication Area Style
+/* 
+37 - Authentication Area Style
 <<<<======================================================>>>>*/
 .sign-in-area {
 	.container {
@@ -3638,7 +3672,8 @@ textarea {
 	}
 }
 
-/* Contact Us Main Area Style
+/* 
+38 - Contact Us Main Area Style
 <<<<======================================================>>>>*/
 .contact-us-main-form {
 	border: 1px solid rgba(186, 216, 227, 0.50);
@@ -3694,7 +3729,8 @@ textarea {
 	}
 }
 
-/* Product Details Area Style
+/* 
+39 - Product Details Area Style
 <<<<======================================================>>>>*/
 .product-details-content {
 	margin-left: 40px;
@@ -3936,7 +3972,8 @@ textarea {
 	}
 }
 
-/* Cart Area Style
+/* 
+40 - Cart Area Style
 <<<<======================================================>>>>*/
 .cart-single-item {
 	border: 1px solid #EDF2F6;
@@ -4145,7 +4182,8 @@ textarea {
 	}
 }
 
-/* Privacy Policy Area Style
+/* 
+41 - Privacy Policy Area Style
 <<<<======================================================>>>>*/
 .privacy-policy-content {
 	h3 {
