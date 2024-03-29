@@ -102,6 +102,7 @@ $box-shadow: 0 0 20px 3px rgba(0, 0, 0, 0.05);
             text-align: center;
             margin: auto;
             margin-top: 30px;
+            margin-bottom: 30px;
         }
     }
     .banner-area-two {
@@ -746,7 +747,7 @@ $box-shadow: 0 0 20px 3px rgba(0, 0, 0, 0.05);
         text-align: center;
         margin-bottom: 30px;
         h1 {
-            font-size: 50px;
+            font-size: 42px;
             margin-bottom: 30px;
         }
     }
@@ -756,6 +757,7 @@ $box-shadow: 0 0 20px 3px rgba(0, 0, 0, 0.05);
             text-align: center;
             margin: auto;
             margin-top: 30px;
+            margin-bottom: 30px;
         }
     }
     .banner-area-two {
@@ -1892,8 +1894,14 @@ $box-shadow: 0 0 20px 3px rgba(0, 0, 0, 0.05);
     .search-offcanvas {
         height: 140px !important;
     }
+    .about-us-img-two {
+        margin-left: 0;
+        margin-right:0;
+    }
 }
 
+/* Medium devices 1400px
+===========================================================*/
 @media only screen and (min-width: 1400px) {
 
     .mw-1680 {

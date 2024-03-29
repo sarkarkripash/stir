@@ -99,6 +99,7 @@
 		autoplay: true,
 		smartSpeed: 1000,
 		autoplayHoverPause: true,
+		animateOut: 'fadeOut',
 		navText: [
 			"<i class='fa-regular fa-arrow-left'></i>",
 			"<i class='fa-regular fa-arrow-right'></i>",

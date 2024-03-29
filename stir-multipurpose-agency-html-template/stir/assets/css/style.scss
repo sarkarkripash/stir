@@ -74,6 +74,7 @@ $warm-blue-color: #4A5FE1;
 $heading-color: #030303;
 $white-color: #ffffff;
 $black-color: #000000;
+$onyx-color: #121212;
 $font-size: 16px;
 $transition: all ease .5s;
 $border-radius: 4px;
@@ -332,7 +333,7 @@ textarea {
             width: 100%;
             height: 56%;
             border-radius: 70px;
-            background-color:  #4f87ff;
+            background-color:  $main-color;
             animation: opacity-six 2.5s infinite linear;
             opacity: 0;
         }
@@ -381,6 +382,7 @@ textarea {
 	transition: $transition;
 	&.active {
 		opacity: 1;
+		z-index: 99;
 	}
 	&:hover {
 		background-color: $optional-color;
@@ -406,6 +408,44 @@ textarea {
 	span {
 		color: $white-color;
 		margin-left: 12px;
+	}
+}
+.video-btn-animate {
+	position: relative;
+	z-index: 1;
+	&::after {
+		content: "";
+		display: block;
+		position: absolute;
+		top: 0;
+		right: 0;
+		z-index: -1;
+		bottom: 0;
+		left: 0;
+		border-radius: 0;
+		border-radius: 50%;
+		transition: $transition;
+		animation: ripple 1.6s ease-out infinite;
+		background-color: rgba(253, 98, 25, 0.9);
+	}
+	&.whites {
+		&::before, &::after {
+			background-color: rgba(255, 255, 255, 0.9);
+		}
+	}
+}
+@keyframes ripple {
+	0%, 35% {
+		transform: scale(0);
+	  	opacity: 1;
+	}
+	50% {
+		transform: scale(1.5);
+	  	opacity: 0.8;
+	}
+	100% {
+	  	opacity: 0;
+		transform: scale(2);
 	}
 }
 
@@ -503,6 +543,7 @@ textarea {
 	}
 }
 .circle-btn {
+	color: $heading-color;
 	i {
 		width: 90px;
 		height: 90px;
@@ -513,12 +554,32 @@ textarea {
 		border-radius: 100px;
 		transition: $transition;
 		margin-left: 25px;
+		z-index: 1;
+		overflow: hidden;
+		position: relative;
+		&::after {
+			content: "";
+			position: absolute;
+			top: 0;
+			width: 0;
+			height: 100%;
+			right: 0;
+			background-color: $main-color;
+			border-radius: 100px;
+			transition: $transition;
+			z-index: -1;
+		}
 	}
 	&:hover {
+		color: $main-color;
 		i {
-			background-color: $main-color;
 			border-color: $main-color;
-			color: $white-color;
+			color: $white-color !important;
+			&::after {
+				right: auto;
+				left: 0;
+				width: 100%;
+			}
 		}
 	}
 }
@@ -532,6 +593,21 @@ textarea {
 	border: 1px solid $optional-color;
 	border-radius: 100px;
 	text-align: center;
+	z-index: 1;
+	overflow: hidden;
+	position: relative;
+	&::after {
+		content: "";
+		position: absolute;
+		top: 0;
+		width: 0;
+		height: 100%;
+		right: 0;
+		background-color: $main-color;
+		border-radius: 100px;
+		transition: $transition;
+		z-index: -1;
+	}
 	i {
 		display: block;
 		margin-top: 12px;
@@ -546,6 +622,12 @@ textarea {
 	&:hover {
 		background-color: $optional-color;
 		color: $heading-color;
+		border-color: $main-color;
+		&::after {
+			right: auto;
+			left: 0;
+			width: 100%;
+		}
 	}
 }
 
@@ -574,10 +656,13 @@ textarea {
 <<<<======================================================>>>>*/ 
 .section-title {
 	text-align: center;
-	max-width: 860px;
-	margin: -5px auto 50px;
-	&.mw-800 {
-		max-width: 800px;
+	max-width: 920px;
+	margin: -5px auto 40px;
+	&.mw-730 {
+		max-width: 730px;
+	}
+	&.mw-660 {
+		max-width: 660px;
 	}
 	h2 {
 		font-size: 48px;
@@ -625,8 +710,8 @@ textarea {
 <<<<======================================================>>>>*/ 
 .header-wrapper {
 	border-bottom: 1px solid rgba(255, 255, 255, 0.1);
-	padding-top: 20px;
-	padding-bottom: 20px;
+	padding-top: 21px;
+	padding-bottom: 21px;
 }
 .header-left-content {
 	p {
@@ -691,12 +776,25 @@ textarea {
 				background-color: #FF4375;
 				color: $white-color;
 				font-family: $helvetica-neue-font-family;
+				font-size: 15px;
+				font-weight: 500;
 			}
 		}
 		.navbar {
 			border-bottom: 1px solid rgba(255, 255, 255, 0.05);
 			padding-top: 15px;
 			padding-bottom: 15px;
+		}
+		.main-nav .navbar .navbar-nav .nav-item {
+			padding-top: 22px;
+			padding-bottom: 22px;
+			.nav-link {
+				font-size: 15px;
+				font-weight: 500;
+			}
+		}
+		.navbar-brand {
+			margin-right: 150px;
 		}
 	}
 	&.style-three {
@@ -705,7 +803,7 @@ textarea {
 				.navbar-nav {
 					.nav-item {
 						.nav-link {
-							color: #121212;
+							color: $onyx-color;
 							font-weight: 400;
 							font-size: 16px;
 						}
@@ -779,8 +877,8 @@ textarea {
         .navbar-nav {
             .nav-item {
                 position: relative;
-				padding-top: 25px;
-				padding-bottom: 25px;
+				padding-top: 35px;
+				padding-bottom: 35px;
 				padding-left: 0;
 				padding-right: 0;
                 .nav-link {
@@ -790,8 +888,8 @@ textarea {
 					position: relative;
 					font-weight: 500;
                     padding: 0;
-                    margin-left: 15px;
-					margin-right: 15px;
+                    margin-left: 12px;
+					margin-right: 12px;
 					&.dropdown-toggle {
 						padding-right: 20px;
 						&::before {
@@ -1096,7 +1194,7 @@ textarea {
 			list-style: none;
 			position: relative;
 			padding-left: 22px;
-			margin-right: 35px;
+			margin-right: 30px;
 			.form-select {
 				padding: 0;
 				padding-right: 20px;
@@ -1127,7 +1225,7 @@ textarea {
 		.social-link {
 			li {
 				display: inline-block;
-				margin-right: 10px;
+				margin-right: 5px;
 				&:last-child {
 					margin-right: 0;
 				}
@@ -1138,7 +1236,7 @@ textarea {
 					line-height: 30px;
 					text-align: center;
 					background-color: #111;
-					font-size: 18px;
+					font-size: 15px;
 					color: $white-color;
 					&:hover {
 						background-color: $main-color;
@@ -1217,12 +1315,12 @@ textarea {
 	padding-bottom: 250px;
 }
 .banner-content {
-	max-width: 999px;
+	max-width: 1120px;
 	h1 {
 		color: $white-color;
 		font-size: 70px;
 		line-height: 1.33;
-		margin-bottom: 100px;
+		margin-bottom: 75px;
 		font-weight: 900;
 		span {
 			font-style: italic;
@@ -1243,15 +1341,29 @@ textarea {
 		width: 137px;
 		height: 137px;
 		font-size: 16px;
-		font-weight: 500;
+		font-weight: 400;
 		display: inline-block;
 		border: 1px solid rgba(255, 255, 255, 0.15);
 		border-radius: 100px;
 		text-align: center;
 		position: relative;
 		color: $white-color;
+		z-index: 1;
+		overflow: hidden;
+		&::before {
+			content: "";
+			position: absolute;
+			top: 0;
+			width: 0;
+			height: 100%;
+			right: 0;
+			background-color: $main-color;
+			border-radius: 100px;
+			transition: $transition;
+		}
 		i {
 			font-size: 14px;
+			margin-left: 5px;
 		}
 		span {
 			position: absolute;
@@ -1261,22 +1373,26 @@ textarea {
 			transform: translateY(-50%);
 		}
 		&:hover {
-			background-color: $main-color;
 			color: $white-color;
+			&::before {
+				right: auto;
+				left: 0;
+				width: 100%;
+			}
 		}
 	}
 }
 .creative-agency {
 	position: absolute;
-	bottom: 0;
+	bottom: -60px;
 	right: 0;
 	.video-btns {
-		width: 50px;
-		height: 50px;
-		line-height: 50px;
+		width: 40px;
+		height: 40px;
+		line-height: 40px;
 		text-align: center;
 		color: $white-color;
-		font-size: 20px;
+		font-size: 18px;
 		background-color: $main-color;
 		border-radius: 100px;
 		display: inline-block;
@@ -1292,9 +1408,14 @@ textarea {
 		margin-top: 260px;
 		color: $white-color;
 		font-size: 18px;
-		font-weight: 600;
+		font-weight: 400;
 		max-width: 333px;
 		text-align: right;
+	}
+	.video-img {
+		img {
+			opacity: 0.5;
+		}
 	}
 }
 .scroll-btn {
@@ -1332,9 +1453,8 @@ textarea {
 .shape {
 	position: absolute;
 	&.shape-1 {
-		top: 250px;
+		top: 290px;
 		left: 200px;
-		opacity: 0.6;
 		animation: rotation 20s linear infinite;
 	}
 	&.shape-2 {
@@ -1386,13 +1506,14 @@ textarea {
 		}
 		span {
 			color: $white-color;
+			font-size: 15px;
 		}
 	}
 	h2 {
 		font-size: 60px;
 		line-height: 1.222;
 		color: $white-color;
-		margin-bottom: 40px;
+		margin-bottom: 25px;
 	}
 	p {
 		margin-bottom: 40px;
@@ -1401,6 +1522,7 @@ textarea {
 	}
 	.circle-btn-two {
 		margin-left: 60px;
+		font-weight: 400;
 	}
 }
 .banner-img {
@@ -1434,14 +1556,28 @@ textarea {
 		font-size: 16px;
 		font-weight: 500;
 		display: inline-block;
-		border: 1px solid #121212;
+		border: 1px solid $onyx-color;
 		border-radius: 100px;
 		text-align: center;
 		position: absolute;
-		color: #121212;
+		color: $onyx-color;
 		top: 80px;
 		right: 216px;
 		background-color: $white-color;
+		z-index: 1;
+		overflow: hidden;
+		&::after {
+			content: "";
+			position: absolute;
+			top: 0;
+			width: 0;
+			height: 100%;
+			right: 0;
+			background-color: $warm-blue-color;
+			border-radius: 100px;
+			transition: $transition;
+			z-index: -1;
+		}
 		i {
 			font-size: 14px;
 		}
@@ -1453,9 +1589,13 @@ textarea {
 			transform: translateY(-50%);
 		}
 		&:hover {
-			background-color: $warm-blue-color;
 			border-color: $warm-blue-color;
 			color: $white-color;
+			&::after {
+				right: auto;
+				left: 0;
+				width: 100%;
+			}
 		}
 	}
 	.agency-info {
@@ -1465,8 +1605,9 @@ textarea {
 		left: 15px;
 		p {
 			font-size: 16px;
-			color: #666666;
+			color: $body-color;
 			margin-bottom: 100px;
+			font-weight: 400;
 		}
 		.map-info {
 			.map-icon {
@@ -1481,7 +1622,7 @@ textarea {
 				line-height: 28px; 
 				font-size: 18px;
 				font-weight: 400;
-				color: #121212;
+				color: $onyx-color;
 				margin-bottom: 0;
 				width: 183px;
 			}
@@ -1570,6 +1711,17 @@ textarea {
 		color: $heading-color;
 	}
 }
+.brands-item {
+	a {
+		border: 1px solid #CECECE;
+		border-radius: 100px;
+		display: inline-block;
+		&:hover {
+			border-color: $main-color;
+			transform: translateY(-5px);
+		}
+	}
+}
 
 /*
 17 - About Us Style
@@ -1586,8 +1738,8 @@ textarea {
 	}
 	p {
 		font-size: 18px;
-		font-weight: 600;
 		margin-bottom: 30px;
+		line-height: 1.6;
 	}
 	.about-list {
 		margin-bottom: 60px;
@@ -1615,6 +1767,10 @@ textarea {
 	}
 }
 .about-us-img {
+	margin-right: 76px;
+}
+.about-us-img-two {
+	margin-left: -76px;
 	margin-right: 76px;
 }
 .about-us-content-two {
@@ -1649,7 +1805,7 @@ textarea {
 		}
 	}
 	p {
-		font-weight: 600;
+		//font-weight: 600;
 	}
 }
 
@@ -1694,6 +1850,7 @@ textarea {
 			margin-bottom: 10px;
 			position: relative;
 			padding-left: 15px;
+			color: #74787C;
 			&::before {
 				content: "";
 				position: absolute;
@@ -1800,7 +1957,7 @@ textarea {
 	p {
 		margin-bottom: 30px;
 		font-size: 18px;
-		font-weight: 600;
+		line-height: 1.6;
 	}
 }
 .skill-bar {
@@ -1938,6 +2095,7 @@ textarea {
 		font-weight: 600;
 		color: $heading-color;
 		margin-bottom: 30px;
+		line-height: 1.5;
 	}
 	h4 {
 		margin-bottom: 0;
@@ -2177,7 +2335,7 @@ textarea {
 			font-weight: 600;
 			line-height: 1.3;
 			text-decoration: none;
-			color: #121212;
+			color: $onyx-color;
 			&:hover {
 				a {
 					color: $warm-blue-color;
@@ -2240,6 +2398,7 @@ textarea {
 						border-radius: 50px;
 						margin-right: 30px;
 						display: inline-block;
+						font-weight: 400;
 					}
 					&:focus {
 						box-shadow: none;
@@ -2268,10 +2427,13 @@ textarea {
 			}
 			.accordion-body {
 				padding-left: 85px;
-				padding-top: 15px;
+				padding-top: 10px;
+				padding-bottom: 0;
 				p {
 					font-size: 18px;
-					font-weight: 600;
+					font-weight: 500;
+					color: $body-color;
+					line-height: 1.6;
 				}
 			}
 			&:first-child {
@@ -2294,7 +2456,8 @@ textarea {
 			font-size: 18px;
 			&::placeholder {
 				font-size: 18px;
-				font-weight: 600;
+				font-weight: 500;
+				color: $body-color;
 			}
 			&:focus {
 				border-color: $main-color;
@@ -2307,6 +2470,9 @@ textarea {
 				background-color: $white-color;
 				border-color: #EFEFEF;
 				color: $heading-color;
+				&::placeholder {
+					color: #A4A4A4;
+				}
 			}
 		}
 		.circle-btn {
@@ -2411,6 +2577,7 @@ textarea {
 			font-weight: 400;
 			color: #A9A9AF;
 			font-size: 16px;
+			max-width: 300px;
 		}
 		.social-link {
 			li {
@@ -2493,6 +2660,9 @@ textarea {
 		h3 {
 			color: $white-color;
 		}
+		p {
+			font-weight: 400;
+		}
 		.social-link {
 			li {
 				a {
@@ -2506,6 +2676,16 @@ textarea {
 			color: $white-color;
 			&::placeholder {
 				color: #575757;
+			}
+		}
+		.contact-info {
+			li {
+				a {
+					font-weight: 400;
+					&:hover {
+						color: $main-color;
+					}
+				}
 			}
 		}
 	}
@@ -2560,7 +2740,7 @@ textarea {
 				text-decoration: none;
 				padding: 20px 30px;
 				display: block;
-				color: #121212;
+				color: $onyx-color;
 				&:hover {
 					color: $warm-blue-color;
 				}
@@ -2573,8 +2753,8 @@ textarea {
 	.main-btn {
 		border-radius: 5px;
 		background-color: transparent;
-		border: 1px solid #121212;
-		color: #121212;
+		border: 1px solid $onyx-color;
+		color: $onyx-color;
 		&:hover {
 			border-color: $warm-blue-color;
 			background-color: $warm-blue-color;
@@ -2590,6 +2770,10 @@ textarea {
 		li {
 			a {
 				text-decoration: none;
+				color: $onyx-color;
+				&:hover {
+					color: $warm-blue-color;
+				}
 			}
 		}
 	}
@@ -2685,7 +2869,7 @@ textarea {
 		font-weight: 600;
 		margin-bottom: 20px;
 		a {
-			color: #121212;
+			color: $onyx-color;
 			text-decoration: none;
 		}
 	}
@@ -2694,10 +2878,12 @@ textarea {
 	}
 	.read-more {
 		font-size: 18px;
-		color: #121212;
+		color: $onyx-color;
 		text-decoration: none;
+		border-bottom: 1px solid #f6f5f3;
 		&:hover {
 			color: $warm-blue-color;
+			border-color: $warm-blue-color;
 		}
 	}
 	&:hover {
@@ -2755,6 +2941,7 @@ textarea {
 	h3 {
 		font-size: 22px;
 		margin-bottom: 20px;
+		line-height: 1.5;
 		a {
 			color: $white-color;
 			text-decoration: none;
@@ -2788,6 +2975,11 @@ textarea {
 		&.style-two {
 			border-color: $main-color;
 			transform: translateY(-5px);
+			h3 {
+				a {
+					color: $main-color;
+				}
+			}
 		}
 	}
 }
@@ -2855,6 +3047,20 @@ textarea {
 		font-weight: 500;
 		font-family: $helvetica-neue-font-family;
 		position: relative;
+		z-index: 1;
+		overflow: hidden;
+		&::after {
+			content: "";
+			position: absolute;
+			top: 0;
+			width: 0;
+			height: 100%;
+			right: 0;
+			background-color: $main-color;
+			border-radius: 100px;
+			transition: $transition;
+			z-index: -1;
+		}
 		&::before {
 			content: "";
 			position: absolute;
@@ -2867,6 +3073,11 @@ textarea {
 		}
 		&:hover {
 			background-color: $main-color;
+			&::after {
+				right: auto;
+				left: 0;
+				width: 100%;
+			}
 		}
 	}
 }
@@ -2963,7 +3174,6 @@ textarea {
 	}
 }
 
-
 /*
 30 - Marquee Area Style
 <<<<======================================================>>>>*/
@@ -3013,7 +3223,7 @@ textarea {
 			display:  inline-block;
 			white-space: nowrap;
 			color: transparent;
-			-webkit-text-stroke: 1px #121212;
+			-webkit-text-stroke: 1px $onyx-color;
 			-webkit-user-select: none;
 			-moz-user-select: none;
 			-ms-user-select: none;
@@ -3024,7 +3234,7 @@ textarea {
 			line-height: 1;
 			margin-bottom: 0;
 			&.block {
-				color: #121212;
+				color: $onyx-color;
 			}
 		}
 	}
@@ -3249,6 +3459,7 @@ textarea {
 			height: 100%;
 			color: $white-color;
 			padding: 10px 18px;
+			border-radius: 4px;
 		}
 	}
 	.service-list {
@@ -3686,6 +3897,12 @@ textarea {
 	.form-group {
 		.form-control {
 			border-color: #F4F4F4;
+			font-size: 16px;
+			font-weight: 400;
+			&::placeholder {
+				font-size: 16px;
+				font-weight: 400;
+			}
 			&:focus {
 				border-color: $main-color;
 			}
